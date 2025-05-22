@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+@tailwind base;
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    @apply bg-[#EBEAE9] font-Inter overflow-x-hidden
+}
+
+
+form {
+    caret-color: #EC7709 !important;
+}
+
+* :not form {
+    caret-color: transparent;
+}
+
+::selection {
+    text-shadow: -1px 1px 0 #232323,
+        1px 1px 0 #232323,
+        1px -1px 0 #232323,
+        -1px -1px 0 #232323;
+    background-color: transparent;
+    color: #EBEAE9
+}
+
+strong::selection {
+    text-shadow: none !important;
+    color: #232323 !important;
+}
+
+::-webkit-scrollbar,
+body::-webkit-scrollbar {
+    width: 5px;
+    height: 20px;
+}
+
+::-webkit-scrollbar-track,
+body::-webkit-scrollbar-track {
+    background-color: #EBEAE9;
+}
+
+::-webkit-scrollbar-thumb,
+body::-webkit-scrollbar-thumb {
+    @apply bg-primary
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #EC7709
+}
+
+@tailwind components;
+@tailwind utilities;
+
+.vertical {
+    writing-mode: sideways-lr;
+}
