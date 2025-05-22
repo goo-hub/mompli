@@ -31,11 +31,11 @@ const Footer = () => {
           <div className="flex flex-col lg:flex-row items-start lg:items-end uppercase">
             <div className="border-l border-black h-48 mr-4" />
             <ul className="flex gap-4">
-              <li className="hover:underline cursor-pointer mr-4">Contacto</li>
+              <li className="hover:underline cursor-pointer">Servicios</li>
               <li className="hover:underline cursor-pointer mr-4">
                 Política de Privacidad
               </li>
-              <li className="hover:underline cursor-pointer">Servicios</li>
+              <li className="hover:underline cursor-pointer mr-4">Contacto</li>
             </ul>
           </div>
 
@@ -60,7 +60,7 @@ const Footer = () => {
           {/* Derechos y logo */}
           <div className="text-right text-xs flex items-center gap-4">
             <div>
-              <p>© {new Date().getFullYear()} derechos reservados por</p>
+              <p>© {new Date().getFullYear()} Derechos reservados</p>
               <p>
                 Realizado por{" "}
                 <a

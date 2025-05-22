@@ -64,18 +64,21 @@ const Hero = () => {
       <div className="container mx-auto flex justify-between h-1/4 -mt-12">
         {/* Texto */}
         <div className="w-full md:w-10/12 flex flex-col justify-center px-6 py-12 md:py-0 ">
-          <p className="text-2xl  tracking-widest mb-4 border-t border-primary pt-6  before:inline-block before:w-5 before:h-5 before:mr-4 before:border before:border-primary before:rounded-full">
+          <p className="text-2xl  tracking-widest mb-4 border-t border-primary pt-6 before:transition-all duration-500 before:inline-block before:w-5 before:h-5 before:mr-4 before:border before:border-primary before:hover:bg-accent before:rounded-full">
             {slides[current].subtitle}
           </p>
           <h1 className="text-3xl md:text-6xl font-bold  leading-tight mb-6">
             {slides[current].title}
           </h1>
         </div>
-        {/* Botón tipo rombo */}
-        <div className="relative group w-40 h-40 rounded-xl scale-y-[70%] ">
-          <div className="absolute inset-0 transfor rounded-md rotate-45 bg-primary outline-double  outline-offset-4 outline-[#c5c5c5]"></div>
-          <button className="absolute inset-0 transform rotate-45 flex  items-center justify-center text-white font-bold  text-xl">
-            <span className="-rotate-45 font-medium scale-y-[150%]">
+        {/* Botón tipo rombo con animación */}
+        <div className="relative group w-40 h-40 rounded-xl scale-y-[70%] cursor-pointer">
+          {/* Fondo animado con pulso */}
+          <div className="absolute inset-0 transform rotate-45 bg-primary rounded-md outline-double outline-offset-4 outline-[#c5c5c5] transition duration-300 group-hover:scale-105 group-hover:shadow-[0_0_30px_4px_rgba(0,0,0,0.2)]" />
+
+          {/* Botón encima */}
+          <button className="absolute inset-0 transform rotate-45 flex items-center justify-center text-white font-bold text-xl transition-all duration-300 group-hover:text-accent">
+            <span className="-rotate-45 font-medium scale-y-[150%] tracking-widest group-hover:-translate-y-1 transition-all duration-300">
               EMPIEZA HOY
             </span>
           </button>

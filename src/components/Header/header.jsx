@@ -1,11 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faGithub,
-  faInstagram,
-  faLinkedinIn,
-} from "@fortawesome/free-brands-svg-icons";
+import { faFacebookF, faInstagram } from "@fortawesome/free-brands-svg-icons";
 import BurguerButton from "./BurguerButton/burguerButton";
 
 const Header = () => {
@@ -33,7 +29,7 @@ const Header = () => {
 
       <div
         ref={menuRef}
-        className="fixed inset-y-0 right-0 flex flex-col bg-neutral-200 dark:bg-neutral-700 w-[calc(100%-15px)] md:w-64 xl:w-96 p-6 text-white z-50 justify-between transition-transform"
+        className="fixed inset-y-0 right-0 flex flex-col bg-primary w-[calc(100%-15px)] md:w-64 xl:w-96 p-6 text-white justify-between transition-transform z-[9999]"
       >
         <button
           className="text-primary dark:text-neutral-100 font-bold text-lg mb-4 absolute top-4 right-4"
@@ -42,43 +38,35 @@ const Header = () => {
           &#10005;
         </button>
 
-        <ul className="text-primary dark:text-neutral-100">
-          <li className="mb-2 cursor-pointer">Lorem Ipsum</li>
-          <li className="mb-2 cursor-pointer">Lorem Ipsum</li>
+        <ul className="text-primary uppercase dark:text-neutral-100 space-y-4">
+          <li className="mb-2 cursor-pointer">Servicios</li>
+          <li className="mb-2 cursor-pointer">Contacto</li>
+          <li className="mb-2 cursor-pointer">Política de privacidad</li>
         </ul>
 
         <div className="w-full flex flex-col gap-3">
           <ul className="w-full flex justify-center gap-3">
             <li>
               <a
-                href="https://github.com/eldesernauta/"
+                href="https://facebook.com/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <FontAwesomeIcon icon={faGithub} />
+                <FontAwesomeIcon icon={faFacebookF} />
               </a>
             </li>
             <li>
               <a
-                href="https://instagram.com/eldesernauta/"
+                href="https://instagram.com/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <FontAwesomeIcon icon={faInstagram} />
               </a>
             </li>
-            <li>
-              <a
-                href="https://linkedin.com/in/eldesernauta/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FontAwesomeIcon icon={faLinkedinIn} />
-              </a>
-            </li>
           </ul>
           <p className="text-xs text-center text-primary dark:text-neutral-100">
-            {new Date().getFullYear()} © eldesernauta
+            {new Date().getFullYear()} © Mompli
           </p>
         </div>
       </div>

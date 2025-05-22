@@ -6,7 +6,7 @@ const Nosotros = () => {
       <div className="container h-screen mx-auto flex justify-center items-start flex-col">
         <div className="w-9/12 border-t border-primary">
           <div className="flex justify-between pt-6 relative">
-            <p className="text-md  tracking-wider mb-4 before:inline-block before:w-5 before:h-5 before:mr-4 before:border before:border-primary before:rounded-full">
+            <p className="text-md  tracking-wider mb-4 before:inline-block before:transition-all duration-500 before:w-5 before:h-5 before:mr-4 before:border before:border-primary before:hover:bg-accent before:rounded-full ">
               ¿Quiénes somos?
             </p>
             <div className="w-[1px] h-16 rotate-45 absolute -top-2 right-6 bg-primary">

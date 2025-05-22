@@ -76,7 +76,7 @@ const Flotante = ({ sections }) => {
         isFixed
           ? "fixed top-1/2 -translate-y-1/2"
           : "absolute top-auto bottom-0"
-      } right-0 w-96 p-8 space-y-8 border bg-light border-r-0 border-primary text-black z-50 opacity-0`}
+      } right-0 w-96 p-8 space-y-8 border bg-light border-r-0 border-primary text-black z-20 opacity-0`}
       style={{ visibility: "hidden" }} // visibilidad se controla con GSAP
     >
       {/* Menú superior */}

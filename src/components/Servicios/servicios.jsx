@@ -144,9 +144,14 @@ const Servicios = forwardRef(({ refs }, ref) => {
 
       <div className="container mx-auto flex items-center gap-8">
         <div className="w-full h-[1px] bg-primary" />
-        <button className="w-full py-4 border border-primary rounded-none uppercase">
-          Ver todos los servicios
+
+        <button className="w-full py-4 border border-primary rounded-none uppercase font-bold relative overflow-hidden group">
+          <span className="relative z-10 text-primary group-hover:text-white transition-colors duration-300">
+            Ver todos los servicios
+          </span>
+          <span className="absolute inset-0 bg-primary transform -translate-x-full group-hover:translate-x-0 transition-transform duration-300 ease-in-out" />
         </button>
+
         <div className="w-full h-[1px] bg-primary" />
       </div>
 
@@ -200,9 +205,14 @@ const Servicios = forwardRef(({ refs }, ref) => {
 
       <div className="container mx-auto flex items-center gap-8">
         <div className="w-full h-[1px] bg-primary" />
-        <button className="w-full py-4 border border-primary rounded-none uppercase">
-          Ver todos los servicios
+
+        <button className="w-full py-4 border border-primary rounded-none uppercase font-bold relative overflow-hidden group">
+          <span className="relative z-10 text-primary group-hover:text-white transition-colors duration-300">
+            Ver todos los servicios
+          </span>
+          <span className="absolute inset-0 bg-primary transform -translate-x-full group-hover:translate-x-0 transition-transform duration-300 ease-in-out" />
         </button>
+
         <div className="w-full h-[1px] bg-primary" />
       </div>
 
