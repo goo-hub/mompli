@@ -1,20 +1,24 @@
-import { useState, forwardRef } from "react";
+import { useState } from "react";
 import Modal from "react-modal";
 
-import cannabis1 from "../../img/cannabis/reg-cultivares.jpg";
-import cannabis2 from "../../img/cannabis/reg-cultivo-semillas.jpg";
-import cannabis3 from "../../img/cannabis/solicitud-cupo-plantas.jpg";
+import ministerio1 from "../../img/otras/sustancias-quimicas.jpg";
+import ministerio2 from "../../img/otras/tramites-licencia-cultivo.jpg";
 
-import DisenoProductos from "./disenoProductos";
-import TramitesInvima from "./tramitesInvima";
+import fondo1 from "../../img/otras/productos-controlados.jpg";
+import fondo2 from "../../img/otras/fondo-nacional.jpg";
+
+import aseo1 from "../../img/otras/establecimiento-farmaceutico.jpg";
+
+import aseo2 from "../../img/otras/quimicos-controlados.jpg";
 
 Modal.setAppElement("#root"); // importante para accesibilidad
 
 const tabsData = {
   "Ministerio de Justicia": [
     {
-      title: "Registro de cultivares de cannabis ante el ICA",
-      image: cannabis1,
+      title:
+        "Manejo de productos con sustancias químicas controladas en el SICOP",
+      image: ministerio1,
       description:
         "Brindamos asesoría técnica para registrar alimentos bajo normatividad vigente.",
       phases: [
@@ -33,9 +37,30 @@ const tabsData = {
       ],
     },
     {
-      title:
-        "Registro de cultivo y semillas de cannabis ante el ministerio de justicia",
-      image: cannabis2,
+      title: "Trámites de licencia de cultivo de cannabis industrial",
+      image: ministerio2,
+      description:
+        "Brindamos asesoría técnica para registrar alimentos bajo normatividad vigente.",
+      phases: [
+        {
+          title: "FASE 1: DIAGNÓSTICO",
+          points: ["Evaluar requisitos", "Revisión documental"],
+        },
+        {
+          title: "FASE 2: DISEÑO",
+          points: ["Plan de acción", "Estrategia regulatoria"],
+        },
+        {
+          title: "FASE 3: IMPLEMENTACIÓN",
+          points: ["Soporte técnico", "Radicación ante INVIMA"],
+        },
+      ],
+    },
+  ],
+  "Fondo nacional de estupefacientes": [
+    {
+      title: "Autorización para el manejo de productos controlados en Colombia",
+      image: fondo1,
       description:
         "Brindamos asesoría técnica para registrar alimentos bajo normatividad vigente.",
       phases: [
@@ -54,9 +79,54 @@ const tabsData = {
       ],
     },
     {
+      title: "Asesoría en reportes periódicos ante el fondo nacional",
+      image: fondo2,
+      description:
+        "Brindamos asesoría técnica para registrar alimentos bajo normatividad vigente.",
+      phases: [
+        {
+          title: "FASE 1: DIAGNÓSTICO",
+          points: ["Evaluar requisitos", "Revisión documental"],
+        },
+        {
+          title: "FASE 2: DISEÑO",
+          points: ["Plan de acción", "Estrategia regulatoria"],
+        },
+        {
+          title: "FASE 3: IMPLEMENTACIÓN",
+          points: ["Soporte técnico", "Radicación ante INVIMA"],
+        },
+      ],
+    },
+  ],
+  "Entidades territoriales de salud": [
+    {
       title:
-        "Solicitud de cupo de plantas psicoactivas ante el ministerio de justicia",
-      image: cannabis3,
+        "Apertura de establecimientos farmacéuticos mayoristas y minoristas",
+      image: aseo1,
+      description:
+        "Brindamos asesoría técnica para registrar alimentos bajo normatividad vigente.",
+      phases: [
+        {
+          title: "FASE 1: DIAGNÓSTICO",
+          points: ["Evaluar requisitos", "Revisión documental"],
+        },
+        {
+          title: "FASE 2: DISEÑO",
+          points: ["Plan de acción", "Estrategia regulatoria"],
+        },
+        {
+          title: "FASE 3: IMPLEMENTACIÓN",
+          points: ["Soporte técnico", "Radicación ante INVIMA"],
+        },
+      ],
+    },
+  ],
+  "Industria y comercio": [
+    {
+      title:
+        "Manejo de productos con sustancias químicas controladas en el SICOP",
+      image: aseo2,
       description:
         "Brindamos asesoría técnica para registrar alimentos bajo normatividad vigente.",
       phases: [
@@ -77,7 +147,7 @@ const tabsData = {
   ],
 };
 
-const Servicios = forwardRef(({ refs }, ref) => {
+const TramitesInvima = () => {
   const [activeTab, setActiveTab] = useState("Ministerio de Justicia");
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedService, setSelectedService] = useState(null);
@@ -93,21 +163,10 @@ const Servicios = forwardRef(({ refs }, ref) => {
   };
 
   return (
-    <section className="container mx-auto pt-8 lg:pt-16 px-5 lg:px-28 2xl:px-8">
-      <div className="container mx-auto border-b pb-2 border-primary">
-        <h2 className="text-primary font-bold uppercase text-3xl md:text-6xl">
-          Nuestros servicios
-        </h2>
-      </div>
-
-      <DisenoProductos />
-      <TramitesInvima />
-
-      <div className="container mx-auto pb-2 mt-12">
-        <h2 className="text-xl lg:text-3xl font-bold uppercase mb-8 lg:mb-16">
-          Cannabis
-        </h2>
-      </div>
+    <div className="pt-8 lg:pt-16">
+      <h2 className="text-xl lg:text-3xl font-bold uppercase mb-8 lg:mb-16">
+        Trámites ante Invima y entidades regulatorias
+      </h2>
 
       {/* Tabs solo visible en desktop */}
       <div className="hidden lg:flex flex-row justify-center gap-12 border-b border-gray-300 mb-8">
@@ -205,8 +264,8 @@ const Servicios = forwardRef(({ refs }, ref) => {
           </div>
         )}
       </Modal>
-    </section>
+    </div>
   );
-});
+};
 
-export default Servicios;
+export default TramitesInvima;

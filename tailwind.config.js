@@ -9,7 +9,7 @@ module.exports = {
       colors: {
         primary: '#232323',
         light: '#EBEAE9',
-        accent: '#EC7709'
+        accent: '#4B3564'
       },
       fontFamily: {
         'Inter': "Inter"

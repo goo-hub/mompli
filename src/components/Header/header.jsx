@@ -24,12 +24,12 @@ const Header = () => {
   }, []);
 
   return (
-    <div className="w-24 h-[95%] my-auto fixed top-5 flex justify-center items-center left-0 p-5 border-solid border-r-2 border-primary z-20">
+    <div className="w-24 h-[95%] my-auto fixed top-5 hidden lg:flex justify-center items-center left-0 p-5 border-solid border-r-2 border-primary z-20">
       <BurguerButton action={handleToggleMenu} showMenu={showMenu} />
 
       <div
         ref={menuRef}
-        className="fixed inset-y-0 right-0 flex flex-col bg-primary w-[calc(100%-15px)] md:w-64 xl:w-96 p-6 text-white justify-between transition-transform z-[9999]"
+        className="fixed inset-y-0 right-0 flex flex-col bg-accent w-[calc(100%-15px)] md:w-64 xl:w-96 p-6 text-white justify-between transition-transform z-[9999]"
       >
         <button
           className="text-primary dark:text-neutral-100 font-bold text-lg mb-4 absolute top-4 right-4"
@@ -39,6 +39,8 @@ const Header = () => {
         </button>
 
         <ul className="text-primary uppercase dark:text-neutral-100 space-y-4">
+          <li className="mb-2 cursor-pointer">Inicio</li>
+          <li className="mb-2 cursor-pointer">¿Quiénes somos?</li>
           <li className="mb-2 cursor-pointer">Servicios</li>
           <li className="mb-2 cursor-pointer">Contacto</li>
           <li className="mb-2 cursor-pointer">Política de privacidad</li>

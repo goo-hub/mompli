@@ -1,84 +1,95 @@
-import { useState, forwardRef } from "react";
+import { useState } from "react";
 import Modal from "react-modal";
 
-import cannabis1 from "../../img/cannabis/reg-cultivares.jpg";
-import cannabis2 from "../../img/cannabis/reg-cultivo-semillas.jpg";
-import cannabis3 from "../../img/cannabis/solicitud-cupo-plantas.jpg";
+import invima1 from "../../img/invima/registro-planta-productora.jpg";
+import invima2 from "../../img/invima/permiso-sanitario.jpg";
+import invima3 from "../../img/invima/aprobacion-rotulado.jpg";
 
-import DisenoProductos from "./disenoProductos";
-import TramitesInvima from "./tramitesInvima";
+import suplementos1 from "../../img/invima/cert-buenas-practicas.jpg";
+import suplementos2 from "../../img/invima/registro-sanitario-suplementos.jpg";
+import suplementos3 from "../../img/invima/autorizacion-publicidad.jpg";
 
-Modal.setAppElement("#root"); // importante para accesibilidad
+import aseo1 from "../../img/invima/cert-productos-aseo.jpg";
+import aseo2 from "../../img/invima/notificacion-sanitaria-obligatoria.jpg";
+
+Modal.setAppElement("#root");
 
 const tabsData = {
-  "Ministerio de Justicia": [
+  Alimentos: [
     {
-      title: "Registro de cultivares de cannabis ante el ICA",
-      image: cannabis1,
-      description:
-        "Brindamos asesoría técnica para registrar alimentos bajo normatividad vigente.",
+      title: "Registro sanitario de alimentos",
+      image: invima1,
+      description: "Brindamos asesoría técnica...",
       phases: [
-        {
-          title: "FASE 1: DIAGNÓSTICO",
-          points: ["Evaluar requisitos", "Revisión documental"],
-        },
-        {
-          title: "FASE 2: DISEÑO",
-          points: ["Plan de acción", "Estrategia regulatoria"],
-        },
-        {
-          title: "FASE 3: IMPLEMENTACIÓN",
-          points: ["Soporte técnico", "Radicación ante INVIMA"],
-        },
+        { title: "FASE 1: DIAGNÓSTICO", points: ["Evaluar requisitos"] },
+        { title: "FASE 2: DISEÑO", points: ["Plan de acción"] },
       ],
     },
     {
-      title:
-        "Registro de cultivo y semillas de cannabis ante el ministerio de justicia",
-      image: cannabis2,
-      description:
-        "Brindamos asesoría técnica para registrar alimentos bajo normatividad vigente.",
+      title: "Permiso o notificación sanitaria",
+      image: invima2,
+      description: "Brindamos asesoría técnica...",
       phases: [
-        {
-          title: "FASE 1: DIAGNÓSTICO",
-          points: ["Evaluar requisitos", "Revisión documental"],
-        },
-        {
-          title: "FASE 2: DISEÑO",
-          points: ["Plan de acción", "Estrategia regulatoria"],
-        },
-        {
-          title: "FASE 3: IMPLEMENTACIÓN",
-          points: ["Soporte técnico", "Radicación ante INVIMA"],
-        },
+        { title: "FASE 1: DIAGNÓSTICO", points: ["Revisión documental"] },
       ],
     },
     {
-      title:
-        "Solicitud de cupo de plantas psicoactivas ante el ministerio de justicia",
-      image: cannabis3,
-      description:
-        "Brindamos asesoría técnica para registrar alimentos bajo normatividad vigente.",
+      title: "Aprobación de rotulado",
+      image: invima3,
+      description: "Brindamos asesoría técnica...",
       phases: [
-        {
-          title: "FASE 1: DIAGNÓSTICO",
-          points: ["Evaluar requisitos", "Revisión documental"],
-        },
-        {
-          title: "FASE 2: DISEÑO",
-          points: ["Plan de acción", "Estrategia regulatoria"],
-        },
-        {
-          title: "FASE 3: IMPLEMENTACIÓN",
-          points: ["Soporte técnico", "Radicación ante INVIMA"],
-        },
+        { title: "FASE 1: DIAGNÓSTICO", points: ["Revisión documental"] },
+      ],
+    },
+  ],
+  "Suplementos dietarios": [
+    {
+      title: "Certificación de buenas prácticas",
+      image: suplementos1,
+      description: "Brindamos asesoría técnica...",
+      phases: [
+        { title: "FASE 1: DIAGNÓSTICO", points: ["Evaluar requisitos"] },
+      ],
+    },
+    {
+      title: "Registro sanitario de suplementos",
+      image: suplementos2,
+      description: "Brindamos asesoría técnica...",
+      phases: [
+        { title: "FASE 1: DIAGNÓSTICO", points: ["Revisión documental"] },
+      ],
+    },
+    {
+      title: "Autorización para publicidad",
+      image: suplementos3,
+      description: "Brindamos asesoría técnica...",
+      phases: [
+        { title: "FASE 1: DIAGNÓSTICO", points: ["Revisión documental"] },
+      ],
+    },
+  ],
+  "Productos de aseo y limpieza": [
+    {
+      title: "Certificado de producción aseo",
+      image: aseo1,
+      description: "Brindamos asesoría técnica...",
+      phases: [
+        { title: "FASE 1: DIAGNÓSTICO", points: ["Evaluar requisitos"] },
+      ],
+    },
+    {
+      title: "Notificación sanitaria obligatoria",
+      image: aseo2,
+      description: "Brindamos asesoría técnica...",
+      phases: [
+        { title: "FASE 1: DIAGNÓSTICO", points: ["Revisión documental"] },
       ],
     },
   ],
 };
 
-const Servicios = forwardRef(({ refs }, ref) => {
-  const [activeTab, setActiveTab] = useState("Ministerio de Justicia");
+const DisenoProductos = () => {
+  const [activeTab, setActiveTab] = useState("Alimentos");
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedService, setSelectedService] = useState(null);
 
@@ -93,21 +104,10 @@ const Servicios = forwardRef(({ refs }, ref) => {
   };
 
   return (
-    <section className="container mx-auto pt-8 lg:pt-16 px-5 lg:px-28 2xl:px-8">
-      <div className="container mx-auto border-b pb-2 border-primary">
-        <h2 className="text-primary font-bold uppercase text-3xl md:text-6xl">
-          Nuestros servicios
-        </h2>
-      </div>
-
-      <DisenoProductos />
-      <TramitesInvima />
-
-      <div className="container mx-auto pb-2 mt-12">
-        <h2 className="text-xl lg:text-3xl font-bold uppercase mb-8 lg:mb-16">
-          Cannabis
-        </h2>
-      </div>
+    <div className="pt-8 lg:pt-16">
+      <h2 className="text-xl lg:text-3xl font-bold uppercase mb-8 lg:mb-16">
+        Diseño de productos
+      </h2>
 
       {/* Tabs solo visible en desktop */}
       <div className="hidden lg:flex flex-row justify-center gap-12 border-b border-gray-300 mb-8">
@@ -138,7 +138,7 @@ const Servicios = forwardRef(({ refs }, ref) => {
                   onClick={() => openModal(item)}
                   className="border p-0 cursor-pointer transition"
                 >
-                  <h4 className="font-bold mb-2 line-clamp-3">{item.title}</h4>
+                  <h4 className="font-bold mb-2">{item.title}</h4>
                   <img src={item.image} alt={item.title} className="w-full" />
                 </div>
               ))}
@@ -205,8 +205,8 @@ const Servicios = forwardRef(({ refs }, ref) => {
           </div>
         )}
       </Modal>
-    </section>
+    </div>
   );
-});
+};
 
-export default Servicios;
+export default DisenoProductos;

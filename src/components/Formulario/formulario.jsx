@@ -60,12 +60,12 @@ const Formulario = () => {
   return (
     <form
       onSubmit={handleSubmit}
-      className="w-full mx-auto px-4 py-6 space-y-4 font-Inter"
+      className="w-full mx-auto py-6 space-y-4 font-Inter"
     >
       <div>
         <input
           type="email"
-          className="w-full border-b border-black outline-none py-2 px-4 bg-transparent uppercase font-bold placeholder:text-[#232323]"
+          className="w-full border-b border-black outline-none py-2 bg-transparent uppercase font-bold placeholder:text-[#232323]"
           value={email}
           placeholder="Ingresa tu correo electrónico"
           onChange={(e) => setEmail(e.target.value)}

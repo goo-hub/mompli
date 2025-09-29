@@ -11,15 +11,20 @@ function App() {
   const invimaRef = useRef(null);
   const cannabisRef = useRef(null);
   const otrasRef = useRef(null);
+  const footerRef = useRef(null);
+
+  const scrollToFooter = () => {
+    footerRef.current?.scrollIntoView({ behavior: "smooth" });
+  };
 
   return (
     <div className='relative w-[100vw] h-screen bg-red'>
       <Header />
-      <Hero />
+      <Hero onCtaClick={scrollToFooter} />
       <Nosotros />
       <Servicios refs={{ invimaRef, cannabisRef, otrasRef }} />
       <Flotante sections={{ invimaRef, cannabisRef, otrasRef }} />
-      <Footer />
+      <Footer ref={footerRef} />
     </div>
   );
 }
