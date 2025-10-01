@@ -28,7 +28,7 @@ const Footer = forwardRef((props, ref) => {
               <ul>
                 <li className="">
                   <FontAwesomeIcon icon={faLocationDot} className="mr-3" />
-                  Centro Comercial Junín Local ###, La Candelaria.{" "}
+                  Centro Comercial Junín Local 218, La Candelaria.{" "}
                 </li>
                 <li className="mt-2">
                   <FontAwesomeIcon icon={faWhatsapp} className="mr-3" />
@@ -61,7 +61,7 @@ const Footer = forwardRef((props, ref) => {
                       <FontAwesomeIcon icon={faFacebookF} />
                     </a>
                     <a
-                      href="https://instagram.com"
+                      href="https://instagram.com/mompli__"
                       target="_blank"
                       rel="noopener noreferrer"
                     >

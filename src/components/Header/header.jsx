@@ -24,7 +24,7 @@ const Header = () => {
   }, []);
 
   return (
-    <div className="w-24 h-[95%] my-auto fixed top-5 hidden lg:flex justify-center items-center left-0 p-5 border-solid border-r-2 border-primary z-20">
+    <div className="w-24 h-[95%] my-auto fixed top-5 hidden lg:flex justify-center items-center left-0 p-5 border-solid border-r-2 border-primary z-50">
       <BurguerButton action={handleToggleMenu} showMenu={showMenu} />
 
       <div

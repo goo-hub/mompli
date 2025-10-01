@@ -165,7 +165,7 @@ const TramitesInvima = () => {
   return (
     <div className="pt-8 lg:pt-16">
       <h2 className="text-xl lg:text-3xl font-bold uppercase mb-8 lg:mb-16">
-        Trámites ante Invima y entidades regulatorias
+        Trámites ante otras entidades regulatorias
       </h2>
 
       {/* Tabs solo visible en desktop */}
