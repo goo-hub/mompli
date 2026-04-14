@@ -27,11 +27,11 @@ const Footer = forwardRef((props, ref) => {
             <div className="mt-12">
               <ul>
                 <li className="">
-                  <FontAwesomeIcon icon={faLocationDot} className="mr-3" />
+                  <FontAwesomeIcon icon={faLocationDot} className="mr-3 text-accent" />
                   Centro Comercial Junín Local 218, La Candelaria.{" "}
                 </li>
                 <li className="mt-2">
-                  <FontAwesomeIcon icon={faWhatsapp} className="mr-3" />
+                  <FontAwesomeIcon icon={faWhatsapp} className="mr-3 text-accent" />
                   <a
                     href="https://mompli.co
                     "
@@ -42,7 +42,7 @@ const Footer = forwardRef((props, ref) => {
                   </a>
                 </li>
                 <li className="mt-2">
-                  <FontAwesomeIcon icon={faEnvelope} className="mr-3" />
+                  <FontAwesomeIcon icon={faEnvelope} className="mr-3 text-accent" />
                   <a
                     href="mailto:aliados@mompli.co"
                     target="_blank"
@@ -58,14 +58,14 @@ const Footer = forwardRef((props, ref) => {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      <FontAwesomeIcon icon={faFacebookF} />
+                      <FontAwesomeIcon icon={faFacebookF} className="text-accent" />
                     </a>
                     <a
                       href="https://instagram.com/mompli__"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      <FontAwesomeIcon icon={faInstagram} />
+                      <FontAwesomeIcon icon={faInstagram} className="text-accent" />
                     </a>
                   </div>
                 </li>

@@ -1,59 +1,35 @@
-import { useState } from "react";
+import { useState, useRef, useCallback } from "react";
 import Modal from "react-modal";
 
-import ministerio1 from "../../img/otras/sustancias-quimicas.jpg";
-import ministerio2 from "../../img/otras/tramites-licencia-cultivo.jpg";
+import ministerio1 from "../../img/otras/sustancias-quimicas.png";
+import ministerio2 from "../../img/otras/tramites-licencia-cultivo.png";
+import fondo1 from "../../img/otras/productos-controlados.png";
+import fondo2 from "../../img/otras/fondo-nacional.png";
+import aseo1 from "../../img/otras/establecimiento-farmaceutico.png";
+import aseo2 from "../../img/otras/quimicos-controlados.png";
 
-import fondo1 from "../../img/otras/productos-controlados.jpg";
-import fondo2 from "../../img/otras/fondo-nacional.jpg";
-
-import aseo1 from "../../img/otras/establecimiento-farmaceutico.jpg";
-
-import aseo2 from "../../img/otras/quimicos-controlados.jpg";
-
-Modal.setAppElement("#root"); // importante para accesibilidad
+Modal.setAppElement("#root");
 
 const tabsData = {
   "Ministerio de Justicia": [
     {
-      title:
-        "Manejo de productos con sustancias químicas controladas en el SICOP",
+      title: "Manejo de productos con sustancias químicas controladas en el SICOP",
       image: ministerio1,
-      description:
-        "Brindamos asesoría técnica para registrar alimentos bajo normatividad vigente.",
+      description: "Brindamos asesoría técnica para registrar alimentos bajo normatividad vigente.",
       phases: [
-        {
-          title: "FASE 1: DIAGNÓSTICO",
-          points: ["Evaluar requisitos", "Revisión documental"],
-        },
-        {
-          title: "FASE 2: DISEÑO",
-          points: ["Plan de acción", "Estrategia regulatoria"],
-        },
-        {
-          title: "FASE 3: IMPLEMENTACIÓN",
-          points: ["Soporte técnico", "Radicación ante INVIMA"],
-        },
+        { title: "FASE 1: DIAGNÓSTICO", points: ["Evaluar requisitos", "Revisión documental"] },
+        { title: "FASE 2: DISEÑO", points: ["Plan de acción", "Estrategia regulatoria"] },
+        { title: "FASE 3: IMPLEMENTACIÓN", points: ["Soporte técnico", "Radicación ante INVIMA"] },
       ],
     },
     {
       title: "Trámites de licencia de cultivo de cannabis industrial",
       image: ministerio2,
-      description:
-        "Brindamos asesoría técnica para registrar alimentos bajo normatividad vigente.",
+      description: "Brindamos asesoría técnica para registrar alimentos bajo normatividad vigente.",
       phases: [
-        {
-          title: "FASE 1: DIAGNÓSTICO",
-          points: ["Evaluar requisitos", "Revisión documental"],
-        },
-        {
-          title: "FASE 2: DISEÑO",
-          points: ["Plan de acción", "Estrategia regulatoria"],
-        },
-        {
-          title: "FASE 3: IMPLEMENTACIÓN",
-          points: ["Soporte técnico", "Radicación ante INVIMA"],
-        },
+        { title: "FASE 1: DIAGNÓSTICO", points: ["Evaluar requisitos", "Revisión documental"] },
+        { title: "FASE 2: DISEÑO", points: ["Plan de acción", "Estrategia regulatoria"] },
+        { title: "FASE 3: IMPLEMENTACIÓN", points: ["Soporte técnico", "Radicación ante INVIMA"] },
       ],
     },
   ],
@@ -61,106 +37,120 @@ const tabsData = {
     {
       title: "Autorización para el manejo de productos controlados en Colombia",
       image: fondo1,
-      description:
-        "Brindamos asesoría técnica para registrar alimentos bajo normatividad vigente.",
+      description: "Brindamos asesoría técnica para registrar alimentos bajo normatividad vigente.",
       phases: [
-        {
-          title: "FASE 1: DIAGNÓSTICO",
-          points: ["Evaluar requisitos", "Revisión documental"],
-        },
-        {
-          title: "FASE 2: DISEÑO",
-          points: ["Plan de acción", "Estrategia regulatoria"],
-        },
-        {
-          title: "FASE 3: IMPLEMENTACIÓN",
-          points: ["Soporte técnico", "Radicación ante INVIMA"],
-        },
+        { title: "FASE 1: DIAGNÓSTICO", points: ["Evaluar requisitos", "Revisión documental"] },
+        { title: "FASE 2: DISEÑO", points: ["Plan de acción", "Estrategia regulatoria"] },
+        { title: "FASE 3: IMPLEMENTACIÓN", points: ["Soporte técnico", "Radicación ante INVIMA"] },
       ],
     },
     {
       title: "Asesoría en reportes periódicos ante el fondo nacional",
       image: fondo2,
-      description:
-        "Brindamos asesoría técnica para registrar alimentos bajo normatividad vigente.",
+      description: "Brindamos asesoría técnica para registrar alimentos bajo normatividad vigente.",
       phases: [
-        {
-          title: "FASE 1: DIAGNÓSTICO",
-          points: ["Evaluar requisitos", "Revisión documental"],
-        },
-        {
-          title: "FASE 2: DISEÑO",
-          points: ["Plan de acción", "Estrategia regulatoria"],
-        },
-        {
-          title: "FASE 3: IMPLEMENTACIÓN",
-          points: ["Soporte técnico", "Radicación ante INVIMA"],
-        },
+        { title: "FASE 1: DIAGNÓSTICO", points: ["Evaluar requisitos", "Revisión documental"] },
+        { title: "FASE 2: DISEÑO", points: ["Plan de acción", "Estrategia regulatoria"] },
+        { title: "FASE 3: IMPLEMENTACIÓN", points: ["Soporte técnico", "Radicación ante INVIMA"] },
       ],
     },
   ],
   "Entidades territoriales de salud": [
     {
-      title:
-        "Apertura de establecimientos farmacéuticos mayoristas y minoristas",
+      title: "Apertura de establecimientos farmacéuticos mayoristas y minoristas",
       image: aseo1,
-      description:
-        "Brindamos asesoría técnica para registrar alimentos bajo normatividad vigente.",
+      description: "Brindamos asesoría técnica para registrar alimentos bajo normatividad vigente.",
       phases: [
-        {
-          title: "FASE 1: DIAGNÓSTICO",
-          points: ["Evaluar requisitos", "Revisión documental"],
-        },
-        {
-          title: "FASE 2: DISEÑO",
-          points: ["Plan de acción", "Estrategia regulatoria"],
-        },
-        {
-          title: "FASE 3: IMPLEMENTACIÓN",
-          points: ["Soporte técnico", "Radicación ante INVIMA"],
-        },
+        { title: "FASE 1: DIAGNÓSTICO", points: ["Evaluar requisitos", "Revisión documental"] },
+        { title: "FASE 2: DISEÑO", points: ["Plan de acción", "Estrategia regulatoria"] },
+        { title: "FASE 3: IMPLEMENTACIÓN", points: ["Soporte técnico", "Radicación ante INVIMA"] },
       ],
     },
   ],
   "Industria y comercio": [
     {
-      title:
-        "Manejo de productos con sustancias químicas controladas en el SICOP",
+      title: "Manejo de productos con sustancias químicas controladas en el SICOP",
       image: aseo2,
-      description:
-        "Brindamos asesoría técnica para registrar alimentos bajo normatividad vigente.",
+      description: "Brindamos asesoría técnica para registrar alimentos bajo normatividad vigente.",
       phases: [
-        {
-          title: "FASE 1: DIAGNÓSTICO",
-          points: ["Evaluar requisitos", "Revisión documental"],
-        },
-        {
-          title: "FASE 2: DISEÑO",
-          points: ["Plan de acción", "Estrategia regulatoria"],
-        },
-        {
-          title: "FASE 3: IMPLEMENTACIÓN",
-          points: ["Soporte técnico", "Radicación ante INVIMA"],
-        },
+        { title: "FASE 1: DIAGNÓSTICO", points: ["Evaluar requisitos", "Revisión documental"] },
+        { title: "FASE 2: DISEÑO", points: ["Plan de acción", "Estrategia regulatoria"] },
+        { title: "FASE 3: IMPLEMENTACIÓN", points: ["Soporte técnico", "Radicación ante INVIMA"] },
       ],
     },
   ],
 };
 
+// ─── Carousel independiente por sección ───────────────────────────────────────
+const MobileCarousel = ({ items, onCardClick }) => {
+  const trackRef = useRef(null);
+  const startX = useRef(0);
+  const startScrollLeft = useRef(0);
+  const isDragging = useRef(false);
+  const hasDragged = useRef(false);
+
+  const onPointerDown = useCallback((e) => {
+    isDragging.current = true;
+    hasDragged.current = false;
+    startX.current = e.clientX ?? e.touches?.[0]?.clientX ?? 0;
+    startScrollLeft.current = trackRef.current.scrollLeft;
+    trackRef.current.style.cursor = "grabbing";
+    trackRef.current.setPointerCapture?.(e.pointerId);
+  }, []);
+
+  const onPointerMove = useCallback((e) => {
+    if (!isDragging.current) return;
+    const x = e.clientX ?? e.touches?.[0]?.clientX ?? 0;
+    const delta = startX.current - x;
+    if (Math.abs(delta) > 4) hasDragged.current = true;
+    trackRef.current.scrollLeft = startScrollLeft.current + delta;
+  }, []);
+
+  const onPointerUp = useCallback(() => {
+    isDragging.current = false;
+    if (trackRef.current) trackRef.current.style.cursor = "grab";
+  }, []);
+
+  return (
+    <div
+      ref={trackRef}
+      className="flex gap-3 overflow-x-auto pb-3 cursor-grab select-none"
+      style={{ scrollSnapType: "x mandatory", WebkitOverflowScrolling: "touch", scrollbarWidth: "none" }}
+      onPointerDown={onPointerDown}
+      onPointerMove={onPointerMove}
+      onPointerUp={onPointerUp}
+      onPointerLeave={onPointerUp}
+    >
+      {items.map((item, idx) => (
+        <div
+          key={idx}
+          onClick={() => { if (!hasDragged.current) onCardClick(item); }}
+          className="flex-shrink-0 w-[72vw] max-w-[260px] border cursor-pointer"
+          style={{ scrollSnapAlign: "start" }}
+        >
+          <img src={item.image} alt={item.title} className="w-full object-cover" draggable={false} />
+          <h4 className="font-bold text-sm p-2 line-clamp-3">{item.title}</h4>
+        </div>
+      ))}
+    </div>
+  );
+};
+
+// ─── Componente principal ──────────────────────────────────────────────────────
 const TramitesInvima = () => {
   const [activeTab, setActiveTab] = useState("Ministerio de Justicia");
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedService, setSelectedService] = useState(null);
 
-  const openModal = (service) => {
+  const openModal = useCallback((service) => {
     setSelectedService(service);
     setIsModalOpen(true);
-  };
+  }, []);
 
-  const closeModal = () => {
+  const closeModal = useCallback(() => {
     setIsModalOpen(false);
     setSelectedService(null);
-  };
+  }, []);
 
   return (
     <div className="pt-8 lg:pt-16">
@@ -168,15 +158,15 @@ const TramitesInvima = () => {
         Trámites ante otras entidades regulatorias
       </h2>
 
-      {/* Tabs solo visible en desktop */}
+      {/* ── TABS desktop ── */}
       <div className="hidden lg:flex flex-row justify-center gap-12 border-b border-gray-300 mb-8">
         {Object.keys(tabsData).map((tab) => (
           <button
             key={tab}
             onClick={() => setActiveTab(tab)}
-            className={`pb-2 border-b-2 transition ${
+            className={`py-2 px-4 border-b-2 transition ${
               activeTab === tab
-                ? "border-black text-black font-semibold"
+                ? "border-accent text-light bg-accent font-semibold rounded-t-sm"
                 : "border-transparent text-gray-500 hover:text-black"
             }`}
           >
@@ -185,62 +175,50 @@ const TramitesInvima = () => {
         ))}
       </div>
 
-      {/* MOBILE: Todas las secciones */}
-      <div className="flex flex-col lg:hidden">
+      {/* ── MOBILE: carrusel por sección ── */}
+      <div className="flex flex-col gap-8 lg:hidden">
         {Object.keys(tabsData).map((tab) => (
-          <div key={tab} className="mb-8">
-            <h3 className="font-bold text-xl mb-4">{tab}</h3>
-            <div className="grid grid-cols-2 gap-2">
-              {tabsData[tab].map((item, idx) => (
-                <div
-                  key={idx}
-                  onClick={() => openModal(item)}
-                  className="border p-0 cursor-pointer transition"
-                >
-                  <h4 className="font-bold mb-2 line-clamp-3">{item.title}</h4>
-                  <img src={item.image} alt={item.title} className="w-full" />
-                </div>
-              ))}
-            </div>
+          <div key={tab}>
+            <h3 className="font-bold text-lg mb-3">{tab}</h3>
+            <MobileCarousel items={tabsData[tab]} onCardClick={openModal} />
           </div>
         ))}
       </div>
 
-      {/* DESKTOP: Grid de tab activo */}
+      {/* ── DESKTOP: grid tab activo (sin cambios) ── */}
       <div className="hidden lg:grid grid-cols-4 gap-4">
         <div className="relative my-8 pr-4 border-r border-primary">
           <h4 className="font-bold text-xl">{activeTab}</h4>
         </div>
-
         {tabsData[activeTab].map((item, idx) => (
           <div
             key={idx}
             onClick={() => openModal(item)}
-            className={`flex flex-col justify-between relative my-8 pb-0 cursor-pointer transition group ${
+            className={`group flex flex-col justify-between relative my-8 pb-0 cursor-pointer transition ${
               idx < 2 ? "border-r border-primary" : ""
             }`}
           >
-            <h4 className="font-bold text-xl group-hover:underline">
-              {item.title}
-            </h4>
-            <img src={item.image} alt={item.title} className="w-3/4 mt-12" />
+            <h4 className="font-bold text-xl group-hover:underline">{item.title}</h4>
+            <img
+              src={item.image}
+              alt={item.title}
+              className="w-3/4 mt-12 grayscale group-hover:grayscale-0 transition duration-300"
+            />
           </div>
         ))}
       </div>
 
-      {/* Modal */}
+      {/* ── Modal (sin cambios) ── */}
       <Modal
         isOpen={isModalOpen}
         onRequestClose={closeModal}
         contentLabel="Detalles del servicio"
-        overlayClassName="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center"
-        className="bg-light max-w-4xl w-full p-8 relative shadow-lg border-b-[24px] border-accent"
+        overlayClassName="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50"
+        className="bg-light max-w-4xl w-full mx-4 p-8 relative shadow-lg border-b-[24px] border-accent"
       >
         {selectedService && (
           <div>
-            <h2 className="text-xl md:text-2xl font-bold mb-4">
-              {selectedService.title}
-            </h2>
+            <h2 className="text-xl md:text-2xl font-bold mb-4">{selectedService.title}</h2>
             <p className="mb-4 text-gray-600">{selectedService.description}</p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {selectedService.phases.map((phase, i) => (
@@ -254,7 +232,6 @@ const TramitesInvima = () => {
                 </div>
               ))}
             </div>
-
             <button
               onClick={closeModal}
               className="absolute top-4 right-4 text-gray-700 hover:text-black font-bold"

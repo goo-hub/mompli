@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Modal from "react-modal";
 
-const mainImg = require("../../img/nosotros.jpg");
+const mainImg = require("../../img/nosotros.png");
 
 Modal.setAppElement("#root");
 
@@ -17,10 +17,10 @@ const Nosotros = () => {
   };
   return (
     <>
-      <div className="container h-auto lg:h-screen mx-auto flex justify-center items-start flex-col px-5 lg:px-28 2xl:px-8">
+      <div className="container group h-auto lg:h-screen mx-auto flex justify-center items-start flex-col px-5 lg:px-28 2xl:px-8">
         <div className="w-full lg:w-9/12 border-t border-primary">
           <div className="flex justify-between pt-6 relative">
-            <p className="text-md tracking-wider mb-8 lg:mb-4 before:inline-block before:transition-all duration-500 before:w-5 before:h-5 before:mr-4 before:border before:border-primary before:hover:bg-accent before:rounded-full ">
+            <p className="text-md tracking-wider mb-8 lg:mb-4 before:inline-block before:transition-all duration-500 before:w-5 before:h-5 before:mr-4 before:border before:border-primary before:group-hover:bg-accent before:rounded-full ">
               ¿Quiénes somos?
             </p>
             <div className="w-[1px] h-16 rotate-45 absolute -top-2 right-6 bg-primary">
@@ -30,6 +30,11 @@ const Nosotros = () => {
           <h2 className=" text-primary uppercase text-2xl lg:text-5xl font-bold">
             Experiencia que respalda tu crecimiento
           </h2>
+          <img
+              src={mainImg}
+              alt="foto de persona leyendo una etiqueta de un producto"
+              className="w-full max-w-[500px] mt-8 lg:mt-0 grayscale hover:grayscale-0 transition duration-500 block lg:hidden"
+            />
         </div>
         <div className="flex flex-col lg:flex-row justify-center items-center py-12 lg:py-24">
           <div className="w-full lg:w-1/2">
@@ -43,7 +48,7 @@ const Nosotros = () => {
             </p>
             <button
               onClick={() => openModal()}
-              className={`px-16 mt-12 ml-0 2xl:ml-12 uppercase py-4 font-bold transition-colors bg-primary text-light hover:bg-accent  border border-primary hover:text-light cursor-pointer`}
+              className={`px-16 mt-12 ml-0 2xl:ml-12 uppercase py-4 font-bold transition-colors bg-accent text-light hover:bg-light border border-accent hover:border-primary hover:text-primary rounded-sm cursor-pointer`}
             >
               Saber más
             </button>
@@ -52,7 +57,7 @@ const Nosotros = () => {
             <img
               src={mainImg}
               alt="foto de persona leyendo una etiqueta de un producto"
-              className="w-full mt-8 lg:mt-0"
+              className="w-full max-w-[500px] mt-8 lg:mt-0 grayscale hover:grayscale-0 transition duration-500 hidden lg:block"
             />
           </div>
         </div>
