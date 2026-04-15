@@ -28,7 +28,7 @@ const Hero = ({ onCtaClick }) => {
   }, []);
 
   return (
-    <section className="flex flex-col h-full lg:h-screen w-full z-10 pb-16 sm:pb-20 lg:pb-0">
+    <section className="flex flex-col h-full lg:h-screen w-full z-10 pb-28 sm:pb-20 lg:pb-0">
       <div className="w-full flex flex-col lg:flex-row items-start justify-start h-3/4 relative">
         <div className="h-full w-24 hidden xl:block absolute left-1/2 -translate-x-1/2 -translate-y-1 -mt-16 2xl:mt-0 top-0 z-0 bg-[#E3E3E3]"></div>
         <img
