@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-import logo from "../../img/logo.svg";
+import logo from "../../img/logo.png";
 const hero1 = require("../../img/mompli_hero1.png");
 const hero2 = require("../../img/mompli_hero2.png");
 
@@ -30,7 +30,6 @@ const Hero = ({ onCtaClick }) => {
   return (
     <section className="flex flex-col h-full lg:h-screen w-full z-10 pb-28 sm:pb-20 lg:pb-0">
       <div className="w-full flex flex-col lg:flex-row items-start justify-start h-3/4 relative">
-        <div className="h-full w-24 hidden xl:block absolute left-1/2 -translate-x-1/2 -translate-y-1 -mt-16 2xl:mt-0 top-0 z-0 bg-[#E3E3E3]"></div>
         <img
           src={logo}
           alt="logo Mompli"
@@ -49,6 +48,8 @@ const Hero = ({ onCtaClick }) => {
           ))}
         </div>
 
+        <div className="w-[45vw] h-[1px] bg-black absolute bottom-12 xl:bottom-6 2xl:bottom-1 left-[10vw] hidden lg:block"></div>
+
         {/* Slider Visual */}
         <div className="relative group w-full h-full overflow-hidden ml-0 lg:-ml-20 xl:ml-0 -mt-16 2xl:mt-0 z-10">
           {slides.map((slide, index) => (
@@ -56,7 +57,7 @@ const Hero = ({ onCtaClick }) => {
               key={index}
               src={slide.image}
               alt={`Slide ${index}`}
-              className={`absolute -top-1 -right-0 w-full lg:w-7/12 h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-1000 ${
+              className={`absolute -top-1 -right-0 w-full lg:w-7/12 h-full object-cover grayscale transition-all duration-1000 ${
                 index === current ? "opacity-100" : "opacity-0"
               }`}
             />
@@ -65,8 +66,8 @@ const Hero = ({ onCtaClick }) => {
       </div>
       <div className="container mx-auto flex flex-col lg:flex-row justify-between px-0 lg:px-24 2xl:px-2 h-1/4 mt-0 lg:-mt-12">
         {/* Texto */}
-        <div className="group w-full lg:w-10/12 flex flex-col justify-center px-6 py-12 lg:py-0">
-          <p className="text-lg lg:text-2xl tracking-widest mb-4 border-t border-primary pt-6 before:transition-all duration-500 before:inline-block before:w-5 before:h-5 before:mr-4 before:border before:border-primary before:group-hover:bg-accent before:rounded-full">
+        <div className="group w-full lg:w-10/12 flex flex-col justify-center px-6 py-6 lg:py-0 mt-0 lg:mt-12">
+          <p className="text-lg lg:text-2xl tracking-widest mb-4 pt-6 before:transition-all duration-500 before:inline-block before:w-5 before:h-5 before:mr-4 before:border before:border-primary before:group-hover:bg-accent before:rounded-full">
             {slides[current].subtitle}
           </p>
           <h1 className="text-2xl lg:text-4xl 2xl:text-6xl font-bold  leading-tight mb-6">

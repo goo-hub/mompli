@@ -125,11 +125,11 @@ const MobileCarousel = ({ items, onCardClick }) => {
         <div
           key={idx}
           onClick={() => { if (!hasDragged.current) onCardClick(item); }}
-          className="flex-shrink-0 w-[72vw] max-w-[260px] border cursor-pointer"
+          className="group flex-shrink-0 w-[72vw] max-w-[260px] border cursor-pointer p-2 sm:p-3 rounded-lg bg-white"
           style={{ scrollSnapAlign: "start" }}
         >
-          <img src={item.image} alt={item.title} className="w-full object-cover" draggable={false} />
-          <h4 className="font-bold text-sm p-2 line-clamp-3">{item.title}</h4>
+          <img src={item.image} alt={item.title} className="w-full object-cover  grayscale group-hover:grayscale-0 transition duration-300" draggable={false} />
+          <h4 className="font-bold text-sm py-2 line-clamp-5 sm:line-clamp-3">{item.title}</h4>
         </div>
       ))}
     </div>
@@ -159,14 +159,14 @@ const TramitesInvima = () => {
       </h2>
 
       {/* ── TABS desktop ── */}
-      <div className="hidden lg:flex flex-row justify-center gap-12 border-b border-gray-300 mb-8">
+      <div className="hidden lg:flex flex-row justify-center gap-4 xl:gap-10 border-b border-gray-300 mb-8">
         {Object.keys(tabsData).map((tab) => (
           <button
             key={tab}
             onClick={() => setActiveTab(tab)}
             className={`py-2 px-4 border-b-2 transition ${
               activeTab === tab
-                ? "border-accent text-light bg-accent font-semibold rounded-t-sm"
+                ? "border-primary text-light bg-primary font-semibold rounded-t-sm"
                 : "border-transparent text-gray-500 hover:text-black"
             }`}
           >

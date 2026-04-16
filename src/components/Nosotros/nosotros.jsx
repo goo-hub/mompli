@@ -33,7 +33,7 @@ const Nosotros = () => {
           <img
               src={mainImg}
               alt="foto de persona leyendo una etiqueta de un producto"
-              className="w-full max-w-[500px] mt-8 lg:mt-0 grayscale hover:grayscale-0 transition duration-500 block lg:hidden"
+              className="w-full max-w-[500px] mt-8 lg:mt-0 grayscale transition duration-500 block lg:hidden"
             />
         </div>
         <div className="flex flex-col lg:flex-row justify-center items-center py-12 lg:py-24">
@@ -57,7 +57,7 @@ const Nosotros = () => {
             <img
               src={mainImg}
               alt="foto de persona leyendo una etiqueta de un producto"
-              className="w-full max-w-[500px] mt-8 lg:mt-0 grayscale hover:grayscale-0 transition duration-500 hidden lg:block"
+              className="w-full max-w-[500px] mt-8 lg:mt-0 grayscale transition duration-500 hidden lg:block"
             />
           </div>
         </div>

@@ -8,7 +8,7 @@ import { faEnvelope, faLocationDot } from "@fortawesome/free-solid-svg-icons";
 import Formulario from "../Formulario/formulario";
 import { forwardRef } from "react";
 
-import logo from "../../img/logo.svg";
+import logo from "../../img/logo.png";
 
 const Footer = forwardRef((props, ref) => {
   return (
@@ -27,11 +27,11 @@ const Footer = forwardRef((props, ref) => {
             <div className="mt-12">
               <ul>
                 <li className="">
-                  <FontAwesomeIcon icon={faLocationDot} className="mr-3 text-accent" />
+                  <FontAwesomeIcon icon={faLocationDot} className="mr-3 " />
                   Centro Comercial Junín Local 218, La Candelaria.{" "}
                 </li>
                 <li className="mt-2">
-                  <FontAwesomeIcon icon={faWhatsapp} className="mr-3 text-accent" />
+                  <FontAwesomeIcon icon={faWhatsapp} className="mr-3 " />
                   <a
                     href="https://mompli.co
                     "
@@ -42,7 +42,7 @@ const Footer = forwardRef((props, ref) => {
                   </a>
                 </li>
                 <li className="mt-2">
-                  <FontAwesomeIcon icon={faEnvelope} className="mr-3 text-accent" />
+                  <FontAwesomeIcon icon={faEnvelope} className="mr-3 " />
                   <a
                     href="mailto:aliados@mompli.co"
                     target="_blank"
@@ -58,14 +58,14 @@ const Footer = forwardRef((props, ref) => {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      <FontAwesomeIcon icon={faFacebookF} className="text-accent" />
+                      <FontAwesomeIcon icon={faFacebookF} className="" />
                     </a>
                     <a
                       href="https://instagram.com/mompli__"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      <FontAwesomeIcon icon={faInstagram} className="text-accent" />
+                      <FontAwesomeIcon icon={faInstagram} className="" />
                     </a>
                   </div>
                 </li>
@@ -110,7 +110,7 @@ const Footer = forwardRef((props, ref) => {
               </p>
             </div>
             <div className="flex items-center justify-end">
-              <img src={logo} alt="Mompli logo" className="w-32" />
+              <img src={logo} alt="Mompli logo" className="w-32 mt-8 lg:mt-0" />
             </div>
           </div>
         </div>

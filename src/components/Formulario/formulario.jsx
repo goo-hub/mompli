@@ -122,10 +122,10 @@ const Formulario = () => {
         <button
           type="submit"
           disabled={!accepted}
-          className={`px-16 uppercase py-4 font-bold transition-colors ${
+          className={`px-16 uppercase py-4 font-bold transition-colors w-full md:w-auto ${
             accepted
-              ? "bg-primary text-light hover:bg-light  border border-primary hover:text-primary cursor-pointer"
-              : "bg-gray-500 text-light cursor-not-allowed"
+              ? "bg-primary text-light hover:bg-accent cursor-pointer"
+              : "bg-light text-primary border border-primary cursor-not-allowed"
           }`}
         >
           Enviar
