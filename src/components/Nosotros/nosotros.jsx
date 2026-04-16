@@ -38,7 +38,7 @@ const Nosotros = () => {
         </div>
         <div className="flex flex-col lg:flex-row justify-center items-center py-12 lg:py-24">
           <div className="w-full lg:w-1/2">
-            <p className="text-primary uppercase ml-0 2xl:ml-12 text-justify lg:text-left">
+            <p className="text-primary font-Inter uppercase ml-0 2xl:ml-12 text-justify lg:text-left">
               En Mompli llevamos <strong>12 años acompañando a empresas</strong>{" "}
               y emprendedores en el cumplimiento de requisitos ante{" "}
               <strong>entidades regulatorias en Colombia</strong>. Somos una

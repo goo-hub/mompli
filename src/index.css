@@ -2,6 +2,14 @@
 
 @tailwind base;
 
+@font-face {
+  font-family: 'GuessSans';
+  src: url('./fonts/guess-sans-regular/guess-sans-regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 html,
 body {
   margin: 0;
@@ -10,8 +18,13 @@ body {
 }
 
 body {
-  @apply bg-[#EBEAE9] font-Inter overflow-x-hidden;
+  @apply bg-[#EBEAE9] font-guess overflow-x-hidden;
 }
+
+p, ul, li {
+  @apply font-Inter;
+}
+
 
 form {
   caret-color: #4b3564 !important;

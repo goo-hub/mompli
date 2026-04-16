@@ -12,7 +12,8 @@ module.exports = {
         accent: '#4B3564'
       },
       fontFamily: {
-        'Inter': "Inter"
+        'Inter': "Inter",
+        guess: ['GuessSans', 'sans-serif'],
       }
     },
   },

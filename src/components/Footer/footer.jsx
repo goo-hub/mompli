@@ -101,7 +101,7 @@ const Footer = forwardRef((props, ref) => {
               <p>
                 Realizado por{" "}
                 <a
-                  href="https://goohub.digital"
+                  href="https://goohubdigital.com"
                   target="_blank"
                   rel="noreferrer"
                 >

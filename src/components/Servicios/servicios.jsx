@@ -93,7 +93,7 @@ const MobileCarousel = ({ items, onCardClick }) => {
           style={{ scrollSnapAlign: "start" }}
         >
           <img src={item.image} alt={item.title} className="w-full object-cover  grayscale hover:grayscale-0 transition duration-300" draggable={false} />
-          <h4 className="font-bold text-sm p-2 line-clamp-3">{item.title}</h4>
+          <h4 className="font-bold font-Inter text-sm p-2 line-clamp-3">{item.title}</h4>
         </div>
       ))}
     </div>
@@ -119,7 +119,7 @@ const Servicios = forwardRef(({ refs }, ref) => {
   return (
     <section className="container mx-auto pt-8 lg:pt-16 px-5 lg:px-28 2xl:px-8">
       <div className="container mx-auto border-b pb-2 border-primary">
-        <h2 className="text-primary font-bold uppercase text-3xl md:text-6xl">
+        <h2 className="text-primary font-bold text-center lg:text-left uppercase text-3xl md:text-6xl">
           Nuestros servicios
         </h2>
       </div>
@@ -128,7 +128,7 @@ const Servicios = forwardRef(({ refs }, ref) => {
       <TramitesInvima />
 
       <div className="container mx-auto pb-2 mt-12">
-        <h2 className="text-xl lg:text-3xl font-bold uppercase mb-8 lg:mb-16">
+        <h2 className="text-xl lg:text-3xl text-center underline font-bold uppercase mb-8 lg:mb-16">
           Cannabis
         </h2>
       </div>
@@ -139,7 +139,7 @@ const Servicios = forwardRef(({ refs }, ref) => {
           <button
             key={tab}
             onClick={() => setActiveTab(tab)}
-            className={`py-2 px-4 border-b-2 transition ${
+            className={`py-2 px-4 border-b-2 transition font-Inter ${
               activeTab === tab
                 ? "border-primary text-light bg-primary font-semibold rounded-t-sm"
                 : "border-transparent text-gray-500 hover:text-black"
@@ -154,7 +154,7 @@ const Servicios = forwardRef(({ refs }, ref) => {
       <div className="flex flex-col gap-8 lg:hidden">
         {Object.keys(tabsData).map((tab) => (
           <div key={tab}>
-            <h3 className="font-bold text-lg mb-3">{tab}</h3>
+            <h3 className="font-bold font-Inter text-lg mb-3">{tab}</h3>
             <MobileCarousel items={tabsData[tab]} onCardClick={openModal} />
           </div>
         ))}
@@ -173,7 +173,7 @@ const Servicios = forwardRef(({ refs }, ref) => {
               idx < 2 ? "border-r border-primary" : ""
             }`}
           >
-            <h4 className="font-bold text-xl group-hover:underline">{item.title}</h4>
+            <h4 className="font-bold text-xl font-Inter group-hover:underline">{item.title}</h4>
             <img
               src={item.image}
               alt={item.title}

@@ -225,7 +225,7 @@ const MobileCarousel = ({ items, onCardClick }) => {
           style={{ scrollSnapAlign: "start" }}
         >
           <img src={item.image} alt={item.title} className="w-full object-cover grayscale hover:grayscale-0 transition duration-300" draggable={false} />
-          <h4 className="font-bold text-sm p-2 line-clamp-3">{item.title}</h4>
+          <h4 className="font-bold font-Inter text-sm p-2 line-clamp-3">{item.title}</h4>
         </div>
       ))}
     </div>
@@ -250,7 +250,7 @@ const DisenoProductos = () => {
 
   return (
     <div className="pt-8 lg:pt-16">
-      <h2 className="text-xl lg:text-3xl font-bold uppercase mb-8 lg:mb-16">
+      <h2 className="text-xl lg:text-3xl font-bold text-center underline uppercase mb-8 lg:mb-16">
         Trámites ante Invima y Diseño de productos
       </h2>
 
@@ -260,7 +260,7 @@ const DisenoProductos = () => {
           <button
             key={tab}
             onClick={() => setActiveTab(tab)}
-            className={`py-2 px-4 border-b-2 transition ${
+            className={`py-2 px-4 border-b-2 font-Inter transition ${
               activeTab === tab
                 ? "border-primary text-light bg-primary font-semibold rounded-t-sm"
                 : "border-transparent text-gray-500 hover:text-black"
@@ -275,7 +275,7 @@ const DisenoProductos = () => {
       <div className="flex flex-col gap-8 lg:hidden">
         {Object.keys(tabsData).map((tab) => (
           <div key={tab}>
-            <h3 className="font-bold text-lg mb-3">{tab}</h3>
+            <h3 className="font-bold font-Inter text-lg mb-3">{tab}</h3>
             <MobileCarousel items={tabsData[tab]} onCardClick={openModal} />
           </div>
         ))}
@@ -294,7 +294,7 @@ const DisenoProductos = () => {
               idx < 2 ? "border-r border-primary" : ""
             }`}
           >
-            <h4 className="font-bold text-xl group-hover:underline">{item.title}</h4>
+            <h4 className="font-bold font-Inter text-xl group-hover:underline">{item.title}</h4>
             <img
               src={item.image}
               alt={item.title}

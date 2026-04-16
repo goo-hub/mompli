@@ -38,12 +38,12 @@ const Header = () => {
           &#10005;
         </button>
 
-        <ul className="text-primary uppercase dark:text-neutral-100 space-y-4">
-          <li className="mb-2 cursor-pointer">Inicio</li>
-          <li className="mb-2 cursor-pointer">¿Quiénes somos?</li>
-          <li className="mb-2 cursor-pointer">Servicios</li>
-          <li className="mb-2 cursor-pointer">Contacto</li>
-          <li className="mb-2 cursor-pointer">Política de privacidad</li>
+        <ul className="text-primary uppercase  dark:text-neutral-100 space-y-4">
+          <li className="mb-2 cursor-pointer font-guess">Inicio</li>
+          <li className="mb-2 cursor-pointer font-guess">¿Quiénes somos?</li>
+          <li className="mb-2 cursor-pointer font-guess">Servicios</li>
+          <li className="mb-2 cursor-pointer font-guess">Contacto</li>
+          <li className="mb-2 cursor-pointer font-guess">Política de privacidad</li>
         </ul>
 
         <div className="w-full flex flex-col gap-3">
@@ -67,7 +67,7 @@ const Header = () => {
               </a>
             </li>
           </ul>
-          <p className="text-xs text-center text-primary dark:text-neutral-100">
+          <p className="text-xs text-center font-guess text-primary dark:text-neutral-100">
             {new Date().getFullYear()} © Mompli
           </p>
         </div>
