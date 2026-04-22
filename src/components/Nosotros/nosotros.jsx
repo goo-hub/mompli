@@ -17,7 +17,7 @@ const Nosotros = () => {
   };
   return (
     <>
-      <div className="container group h-auto lg:h-screen mx-auto flex justify-center items-start flex-col px-5 lg:px-28 2xl:px-8">
+      <div className="container group h-auto py-0 lg:pb-12 lg:pt-48 mx-auto flex justify-center items-start flex-col px-5 lg:px-28 2xl:px-8">
         <div className="w-full lg:w-9/12 border-t border-primary">
           <div className="flex justify-between pt-6 relative">
             <p className="text-md tracking-wider mb-8 lg:mb-4 before:inline-block before:transition-all duration-500 before:w-5 before:h-5 before:mr-4 before:border before:border-primary before:group-hover:bg-accent before:rounded-full ">
@@ -27,28 +27,36 @@ const Nosotros = () => {
               &nbsp;
             </div>
           </div>
-          <h2 className=" text-primary uppercase text-2xl lg:text-5xl font-bold">
+          <h2 className="text-primary uppercase text-xl lg:text-5xl font-bold">
             Experiencia que respalda tu crecimiento
           </h2>
           <img
-              src={mainImg}
-              alt="foto de persona leyendo una etiqueta de un producto"
-              className="w-full max-w-[500px] mt-8 lg:mt-0 grayscale transition duration-500 block lg:hidden"
-            />
+            src={mainImg}
+            alt="foto de persona leyendo una etiqueta de un producto"
+            className="w-full max-w-[500px] mt-8 lg:mt-0 grayscale transition duration-500 block lg:hidden"
+          />
         </div>
         <div className="flex flex-col lg:flex-row justify-center items-center py-12 lg:py-24">
           <div className="w-full lg:w-1/2">
-            <p className="text-primary font-Inter uppercase ml-0 2xl:ml-12 text-justify lg:text-left">
-              En Mompli llevamos <strong>12 años acompañando a empresas</strong>{" "}
-              y emprendedores en el cumplimiento de requisitos ante{" "}
-              <strong>entidades regulatorias en Colombia</strong>. Somos una
-              empresa familiar, cercana y comprometida, que combina experiencia
-              técnica con atención personalizada para que cada
-              <strong> trámite sea claro, ágil y exitoso</strong>.
+            <p className="text-primary ml-0 2xl:ml-12 text-xl hyphens-auto text-justify lg:text-left">
+              En Mompli llevamos 12 años acompañando a empresas y emprendedores
+              en el cumplimiento de requisitos ante entidades regulatorias en
+              Colombia. Somos una empresa familiar, cercana y comprometida, que
+              combina experiencia técnica con atención personalizada para que
+              cada trámite sea claro, ágil y exitoso.{" "}
+              <span className="block lg:hidden float-left">
+                —{" "}
+                <button
+                  onClick={() => openModal()}
+                  className="px-2 py-1 border-2 border-primary font-geraldton"
+                >
+                  Saber Más
+                </button>
+              </span>
             </p>
             <button
               onClick={() => openModal()}
-              className={`px-16 mt-12 ml-0 2xl:ml-12 uppercase py-4 font-bold transition-colors bg-accent text-light hover:bg-light border border-accent hover:border-primary hover:text-primary rounded-sm cursor-pointer`}
+              className={`hidden lg:block px-16 mt-12 ml-0 2xl:ml-12 uppercase py-4 font-bold transition-colors bg-accent text-light hover:bg-light border border-accent hover:border-primary hover:text-primary rounded-sm cursor-pointer`}
             >
               Saber más
             </button>

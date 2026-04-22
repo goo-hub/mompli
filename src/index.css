@@ -1,11 +1,58 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
-
 @tailwind base;
 
 @font-face {
-  font-family: 'GuessSans';
-  src: url('./fonts/guess-sans-regular/guess-sans-regular.otf') format('opentype');
-  font-weight: normal;
+  font-family: "GuessSans";
+  src: url("./fonts/guess-sans-regular/guess-sans-regular.otf")
+    format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "BrandonGrotesque";
+  src: url("./fonts/brandon/Brandon_Grotesque_thin.otf") format("opentype");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "BrandonGrotesque";
+  src: url("./fonts/brandon/Brandon_Grotesque_light.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "BrandonGrotesque";
+  src: url("./fonts/brandon/Brandon_Grotesque_bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Geraldton";
+  src: url("./fonts/geraldton/GeraldtonExtraLight.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Geraldton";
+  src: url("./fonts/geraldton/GeraldtonMedium.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Geraldton";
+  src: url("./fonts/geraldton/GeraldtonExtraBold.otf") format("opentype");
+  font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
@@ -18,13 +65,25 @@ body {
 }
 
 body {
-  @apply bg-[#EBEAE9] font-guess overflow-x-hidden;
+  @apply bg-[#EBEAE9] font-geraldton font-light overflow-x-hidden;
 }
 
-p, ul, li {
-  @apply font-Inter;
+p,
+ul,
+li,
+button,
+span {
+  @apply font-geraldton;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply font-brandon;
+}
 
 form {
   caret-color: #4b3564 !important;
@@ -35,7 +94,10 @@ form {
 }
 
 ::selection {
-  text-shadow: -1px 1px 0 #232323, 1px 1px 0 #232323, 1px -1px 0 #232323,
+  text-shadow:
+    -1px 1px 0 #232323,
+    1px 1px 0 #232323,
+    1px -1px 0 #232323,
     -1px -1px 0 #232323;
   background-color: transparent;
   color: #ebeae9;

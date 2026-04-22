@@ -40,7 +40,8 @@ const tabsData = {
         "Brindamos asesoría técnico legal para el uso correcto del rotulado de alimentos, velando por una la información clara, simple y comprensible para que el consumidor pueda realizar una elección informada del producto.",
       phases: [
         {
-          title: "FASE 1: Trabajamos en la obtención y cumplimiento de la siguiente información.",
+          title:
+            "FASE 1: Trabajamos en la obtención y cumplimiento de la siguiente información.",
           points: [
             "Declaración las nutrientes, contenido neto, rotulado nutricional, tamaño de porción y recomendación diaria de uso.",
           ],
@@ -62,10 +63,34 @@ const tabsData = {
       description:
         "Brindamos asesoría técnico legal de acuerdo al marco normativo aplicable a empresas o persona naturales que cuente con las instalaciones y los equipos necesarios para realizar procesos de fabricación y/o el control de calidad de suplementos dietarios.",
       phases: [
-        { title: "FASE 1: Diagnóstico", points: ["Evaluar las condiciones iniciales del cliente", "Establecer el plan de acción para la certificación"] },
-        { title: "FASE 2: Diseño", points: ["Elaboración de propuesta de diseño", "Distribución de las áreas"] },
-        { title: "FASE 3: Implementación", points: ["Implementación del sistema de gestión de calidad", "Solicitud de visita (diligenciamiento de formatos correspondientes y Guía de Inspección)", "Recopilación de la información técnico legal con la cual se solicita la visita por parte del Invima"] },
-        { title: "FASE 4: Auditoria", points: ["Auditoria para la verificación del cumplimiento de todos los requisitos técnico-legales del establecimiento fabricante"] },
+        {
+          title: "FASE 1: Diagnóstico",
+          points: [
+            "Evaluar las condiciones iniciales del cliente",
+            "Establecer el plan de acción para la certificación",
+          ],
+        },
+        {
+          title: "FASE 2: Diseño",
+          points: [
+            "Elaboración de propuesta de diseño",
+            "Distribución de las áreas",
+          ],
+        },
+        {
+          title: "FASE 3: Implementación",
+          points: [
+            "Implementación del sistema de gestión de calidad",
+            "Solicitud de visita (diligenciamiento de formatos correspondientes y Guía de Inspección)",
+            "Recopilación de la información técnico legal con la cual se solicita la visita por parte del Invima",
+          ],
+        },
+        {
+          title: "FASE 4: Auditoria",
+          points: [
+            "Auditoria para la verificación del cumplimiento de todos los requisitos técnico-legales del establecimiento fabricante",
+          ],
+        },
       ],
     },
     {
@@ -85,19 +110,44 @@ const tabsData = {
   ],
   "Productos de aseo y limpieza": [
     {
-      title: "Certificado de capacidad para producción de productos de aseo y limpieza",
+      title:
+        "Certificado de capacidad para producción de productos de aseo y limpieza",
       image: aseo1,
       description:
         "Brindamos asesoría técnico legal a empresas o persona naturales que cuente con las instalaciones y los equipos necesarios para realizar procesos de producción de productos de aseo y limpieza.",
       phases: [
-        { title: "FASE 1: Diagnóstico", points: ["Evaluar las condiciones iniciales del cliente", "Establecer el plan de acción para la certificación"] },
-        { title: "FASE 2: Diseño", points: ["Elaboración de propuesta de diseño", "Distribución de las áreas"] },
-        { title: "FASE 3: Implementación", points: ["Implementación del sistema de gestión de calidad", "Solicitud de visita (diligenciamiento de formatos correspondientes y recopilación de la información técnico legal con la cual se solicita la visita por parte del Invima)"] },
-        { title: "FASE 4: Auditoria", points: ["Auditoria para la verificación del cumplimiento de todos los requisitos técnico-legales del establecimiento fabricante"] },
+        {
+          title: "FASE 1: Diagnóstico",
+          points: [
+            "Evaluar las condiciones iniciales del cliente",
+            "Establecer el plan de acción para la certificación",
+          ],
+        },
+        {
+          title: "FASE 2: Diseño",
+          points: [
+            "Elaboración de propuesta de diseño",
+            "Distribución de las áreas",
+          ],
+        },
+        {
+          title: "FASE 3: Implementación",
+          points: [
+            "Implementación del sistema de gestión de calidad",
+            "Solicitud de visita (diligenciamiento de formatos correspondientes y recopilación de la información técnico legal con la cual se solicita la visita por parte del Invima)",
+          ],
+        },
+        {
+          title: "FASE 4: Auditoria",
+          points: [
+            "Auditoria para la verificación del cumplimiento de todos los requisitos técnico-legales del establecimiento fabricante",
+          ],
+        },
       ],
     },
     {
-      title: "Notificación sanitaria obligatoria de productos de aseo y limpieza",
+      title:
+        "Notificación sanitaria obligatoria de productos de aseo y limpieza",
       image: aseo2,
       description:
         "Brindamos asesoría técnico legal para el registro sanitario que se le asigna al fabricante, importador o comercializador para comercializar su producto de aseo y limpieza en el mercado colombiano, con previo cumplimiento de todos los requisitos establecidos en la normatividad sanitaria vigente.",
@@ -113,10 +163,34 @@ const tabsData = {
       description:
         "Brindamos asesoría técnico legal a empresas o personas naturales que cuente con las instalaciones y los equipos necesarios para realizar procesos de producción de productos cosméticos.",
       phases: [
-        { title: "FASE 1: Diagnóstico", points: ["Evaluar las condiciones iniciales del cliente", "Establecer el plan de acción para la certificación"] },
-        { title: "FASE 2: Diseño", points: ["Elaboración de propuesta de diseño", "Distribución de las áreas"] },
-        { title: "FASE 3: Implementación", points: ["Implementación del sistema de gestión de calidad", "Solicitud de visita (diligenciamiento de formatos correspondientes y Guía de Inspección)", "Recopilación de la información técnico legal con la cual se solicita la visita por parte del Invima"] },
-        { title: "FASE 4: Auditoria", points: ["Auditoria para la verificación del cumplimiento de todos los requisitos técnico-legales del establecimiento fabricante"] },
+        {
+          title: "FASE 1: Diagnóstico",
+          points: [
+            "Evaluar las condiciones iniciales del cliente",
+            "Establecer el plan de acción para la certificación",
+          ],
+        },
+        {
+          title: "FASE 2: Diseño",
+          points: [
+            "Elaboración de propuesta de diseño",
+            "Distribución de las áreas",
+          ],
+        },
+        {
+          title: "FASE 3: Implementación",
+          points: [
+            "Implementación del sistema de gestión de calidad",
+            "Solicitud de visita (diligenciamiento de formatos correspondientes y Guía de Inspección)",
+            "Recopilación de la información técnico legal con la cual se solicita la visita por parte del Invima",
+          ],
+        },
+        {
+          title: "FASE 4: Auditoria",
+          points: [
+            "Auditoria para la verificación del cumplimiento de todos los requisitos técnico-legales del establecimiento fabricante",
+          ],
+        },
       ],
     },
     {
@@ -135,21 +209,27 @@ const tabsData = {
       image: aseo2,
       description:
         "Brindamos asesoría técnico legal para el registro sanitario que se le asigna al fabricante, importador o comercializador para comercializar su producto cosmético en el mercado colombiano, con previo cumplimiento de todos los requisitos establecidos en la normatividad sanitaria vigente.",
-      phases: [{ title: "FASE 1: DIAGNÓSTICO", points: ["Revisión documental"] }],
+      phases: [
+        { title: "FASE 1: DIAGNÓSTICO", points: ["Revisión documental"] },
+      ],
     },
     {
       title: "Notificación sanitaria obligatoria de productos cosméticos",
       image: aseo2,
       description:
         "Brindamos asesoría técnico legal para el registro sanitario que se le asigna al fabricante, importador o comercializador para comercializar su producto cosmético en el mercado colombiano, con previo cumplimiento de todos los requisitos establecidos en la normatividad sanitaria vigente.",
-      phases: [{ title: "FASE 1: DIAGNÓSTICO", points: ["Revisión documental"] }],
+      phases: [
+        { title: "FASE 1: DIAGNÓSTICO", points: ["Revisión documental"] },
+      ],
     },
     {
       title: "Notificación sanitaria obligatoria de productos cosméticos",
       image: aseo2,
       description:
         "Brindamos asesoría técnico legal para el registro sanitario que se le asigna al fabricante, importador o comercializador para comercializar su producto cosmético en el mercado colombiano, con previo cumplimiento de todos los requisitos establecidos en la normatividad sanitaria vigente.",
-      phases: [{ title: "FASE 1: DIAGNÓSTICO", points: ["Revisión documental"] }],
+      phases: [
+        { title: "FASE 1: DIAGNÓSTICO", points: ["Revisión documental"] },
+      ],
     },
   ],
   Medicamentos: [
@@ -158,21 +238,27 @@ const tabsData = {
       image: aseo2,
       description:
         "Brindamos asesoría técnico legal para el registro sanitario que se le asigna al fabricante, importador o comercializador para comercializar su producto cosmético en el mercado colombiano, con previo cumplimiento de todos los requisitos establecidos en la normatividad sanitaria vigente.",
-      phases: [{ title: "FASE 1: DIAGNÓSTICO", points: ["Revisión documental"] }],
+      phases: [
+        { title: "FASE 1: DIAGNÓSTICO", points: ["Revisión documental"] },
+      ],
     },
     {
       title: "Notificación sanitaria obligatoria de productos cosméticos",
       image: aseo2,
       description:
         "Brindamos asesoría técnico legal para el registro sanitario que se le asigna al fabricante, importador o comercializador para comercializar su producto cosmético en el mercado colombiano, con previo cumplimiento de todos los requisitos establecidos en la normatividad sanitaria vigente.",
-      phases: [{ title: "FASE 1: DIAGNÓSTICO", points: ["Revisión documental"] }],
+      phases: [
+        { title: "FASE 1: DIAGNÓSTICO", points: ["Revisión documental"] },
+      ],
     },
     {
       title: "Notificación sanitaria obligatoria de productos cosméticos",
       image: aseo2,
       description:
         "Brindamos asesoría técnico legal para el registro sanitario que se le asigna al fabricante, importador o comercializador para comercializar su producto cosmético en el mercado colombiano, con previo cumplimiento de todos los requisitos establecidos en la normatividad sanitaria vigente.",
-      phases: [{ title: "FASE 1: DIAGNÓSTICO", points: ["Revisión documental"] }],
+      phases: [
+        { title: "FASE 1: DIAGNÓSTICO", points: ["Revisión documental"] },
+      ],
     },
   ],
 };
@@ -211,7 +297,11 @@ const MobileCarousel = ({ items, onCardClick }) => {
     <div
       ref={trackRef}
       className="flex gap-3 overflow-x-auto pb-3 cursor-grab select-none"
-      style={{ scrollSnapType: "x mandatory", WebkitOverflowScrolling: "touch", scrollbarWidth: "none" }}
+      style={{
+        scrollSnapType: "x mandatory",
+        WebkitOverflowScrolling: "touch",
+        scrollbarWidth: "none",
+      }}
       onPointerDown={onPointerDown}
       onPointerMove={onPointerMove}
       onPointerUp={onPointerUp}
@@ -220,12 +310,21 @@ const MobileCarousel = ({ items, onCardClick }) => {
       {items.map((item, idx) => (
         <div
           key={idx}
-          onClick={() => { if (!hasDragged.current) onCardClick(item); }}
-          className="group flex-shrink-0 w-[72vw] max-w-[260px] border cursor-pointer p-2 sm:p-3 rounded-lg bg-white"
+          onClick={() => {
+            if (!hasDragged.current) onCardClick(item);
+          }}
+          className="group flex-shrink-0 w-[72vw] max-w-[200px] border cursor-pointer p-2 sm:p-3 rounded-lg bg-white"
           style={{ scrollSnapAlign: "start" }}
         >
-          <img src={item.image} alt={item.title} className="w-full object-cover grayscale hover:grayscale-0 transition duration-300" draggable={false} />
-          <h4 className="font-bold font-Inter text-sm p-2 line-clamp-3">{item.title}</h4>
+          <img
+            src={item.image}
+            alt={item.title}
+            className="w-full object-cover grayscale hover:grayscale-0 transition duration-300"
+            draggable={false}
+          />
+          <h4 className="font-medium font-geraldton p-2 line-clamp-3">
+            {item.title}
+          </h4>
         </div>
       ))}
     </div>
@@ -249,10 +348,12 @@ const DisenoProductos = () => {
   }, []);
 
   return (
-    <div className="pt-8 lg:pt-16">
-      <h2 className="text-xl lg:text-3xl font-bold text-center underline uppercase mb-8 lg:mb-16">
-        Trámites ante Invima y Diseño de productos
-      </h2>
+    <div className="group pt-8 lg:pt-10">
+      <div className="lg:w-full flex justify-end">
+        <h2 className="w-3/4 lg:w-full tracking-wider text-2xl normal-case lg:uppercase font-geraldton font-light lg:font-medium text-right lg:text-center mb-8 lg:mb-4 before:inline-block before:transition-all duration-500 before:w-5 before:h-5 before:mr-4 before:border before:border-primary before:group-hover:bg-accent before:rounded-full ">
+          Trámites ante Invima y Diseño de productos
+        </h2>
+      </div>
 
       {/* ── TABS desktop ── */}
       <div className="hidden lg:flex flex-row justify-center gap-4 xl:gap-10 border-b border-gray-300 mb-8">
@@ -260,7 +361,7 @@ const DisenoProductos = () => {
           <button
             key={tab}
             onClick={() => setActiveTab(tab)}
-            className={`py-2 px-4 border-b-2 font-Inter transition ${
+            className={`py-2 px-4 border-b-2  transition ${
               activeTab === tab
                 ? "border-primary text-light bg-primary font-semibold rounded-t-sm"
                 : "border-transparent text-gray-500 hover:text-black"
@@ -275,7 +376,8 @@ const DisenoProductos = () => {
       <div className="flex flex-col gap-8 lg:hidden">
         {Object.keys(tabsData).map((tab) => (
           <div key={tab}>
-            <h3 className="font-bold font-Inter text-lg mb-3">{tab}</h3>
+            <h3 className="font-bold text-2xl mb-1">{tab}</h3>
+            <hr className="w-full border-t border-primary mb-4" />
             <MobileCarousel items={tabsData[tab]} onCardClick={openModal} />
           </div>
         ))}
@@ -294,11 +396,11 @@ const DisenoProductos = () => {
               idx < 2 ? "border-r border-primary" : ""
             }`}
           >
-            <h4 className="font-bold font-Inter text-xl group-hover:underline">{item.title}</h4>
+            <h4 className="font-medium font-geraldton text-lg">{item.title}</h4>
             <img
               src={item.image}
               alt={item.title}
-              className="w-3/4 mt-12 grayscale group-hover:grayscale-0 transition duration-300"
+              className="w-3/4 mt-4 grayscale hover:grayscale-0 transition duration-300"
             />
           </div>
         ))}
@@ -314,7 +416,9 @@ const DisenoProductos = () => {
       >
         {selectedService && (
           <div>
-            <h2 className="text-xl md:text-2xl font-bold mb-4">{selectedService.title}</h2>
+            <h2 className="text-xl md:text-2xl font-bold mb-4">
+              {selectedService.title}
+            </h2>
             <p className="mb-4 text-gray-600">{selectedService.description}</p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {selectedService.phases.map((phase, i) => (

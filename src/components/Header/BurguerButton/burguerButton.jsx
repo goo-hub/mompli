@@ -16,7 +16,7 @@ const BurguerButton = (props) => {
 
   return (
     <button
-      className="absolute top-0 left-5 flex flex-col h-12 w-12 rounded justify-center items-center group scale-75"
+      className="absolute top-3 lg:top-0 left-5 flex flex-col h-12 w-12 rounded justify-center items-center group scale-75"
       onClick={showMenu}
     >
       <div

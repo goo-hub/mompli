@@ -14,27 +14,25 @@ const Footer = forwardRef((props, ref) => {
   return (
     <div ref={ref} className="w-full bg-light z-50">
       <div className="container mx-auto pt-24 flex flex-col justify-center items-start px-5 lg:px-28 2xl:px-8">
-        <h2 className="text-primary font-bold uppercase text-3xl md:text-6xl">
+        <h2 className="text-primary font-bold uppercase text-xl md:text-6xl">
           Hablemos de tu proyecto
         </h2>
-        <div className="w-full grid grid-cols-1 lg:grid-cols-2 py-12 lg:py-24 items-center">
-          <div className="w-full">
-            <p className="text-primary uppercase">
-              <strong>Estamos listos</strong> para acompañarte en cada paso
-              <br />
-              Completa el formulario <strong>y te responderemos pronto</strong>
+        <div className="w-full grid grid-cols-1 lg:grid-cols-2 py-4 lg:py-24 items-start">
+          <div className="order-1">
+            <p className="text-primary text-xl hidden lg:block">
+              Estamos listos para acompañarte en cada paso. <br />
+              Completa el formulario y te responderemos pronto
             </p>
-            <div className="mt-12">
+            <p className="text-primary text-xl lg:hidden">
+              Estamos listos para acompañarte en cada paso, completa el
+              formulario y te responderemos pronto
+            </p>
+            <div className="hidden lg:block mt-12">
               <ul>
-                <li className="">
-                  <FontAwesomeIcon icon={faLocationDot} className="mr-3 " />
-                  Centro Comercial Junín Local 218, La Candelaria.{" "}
-                </li>
                 <li className="mt-2">
                   <FontAwesomeIcon icon={faWhatsapp} className="mr-3 " />
                   <a
-                    href="https://mompli.co
-                    "
+                    href="https://mompli.co"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -44,12 +42,16 @@ const Footer = forwardRef((props, ref) => {
                 <li className="mt-2">
                   <FontAwesomeIcon icon={faEnvelope} className="mr-3 " />
                   <a
-                    href="mailto:aliados@mompli.co"
+                    href="mailto:aliados@mompli.com.co"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    aliados@mompli.co
+                    aliados@mompli.com.co
                   </a>
+                </li>
+                <li className="">
+                  <FontAwesomeIcon icon={faLocationDot} className="mr-3 " />
+                  Centro Comercial Junín Local 218, La Candelaria.{" "}
                 </li>
                 <li>
                   <div className="flex gap-4 mt-2">
@@ -72,16 +74,75 @@ const Footer = forwardRef((props, ref) => {
               </ul>
             </div>
           </div>
-          <div className="w-full">
+          <div className="relative block lg:hidden order-3 lg:order-3  border border-primary p-6">
+            <ul className="space-y-4 font-medium">
+              <li>
+                <FontAwesomeIcon icon={faWhatsapp} className="mr-3 " />
+                <a
+                  href="https://mompli.co"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  324 540 4397
+                </a>
+              </li>
+              <li>
+                <FontAwesomeIcon icon={faEnvelope} className="mr-3 " />
+                <a
+                  href="mailto:aliados@mompli.com.co"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Aliados@mompli.com.co
+                </a>
+              </li>
+              <li className="">
+                <FontAwesomeIcon icon={faLocationDot} className="mr-3 " />
+                Centro Comercial Junín Local 218, La Candelaria.{" "}
+              </li>
+              <li>
+                <div className="flex gap-4 absolute top-5 right-5">
+                  <a
+                    href="https://facebook.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <FontAwesomeIcon icon={faFacebookF} className="" />
+                  </a>
+                  <a
+                    href="https://instagram.com/mompli__"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <FontAwesomeIcon icon={faInstagram} className="" />
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div className="w-full order-2 lg:order-2">
             <Formulario />
           </div>
         </div>
       </div>
 
-      <footer className="bg-transparent container mx-auto text-black font-Inter pb-12 flex justify-end px-5 lg:px-28 2xl:px-8">
-        <div className="flex flex-col lg:flex-row justify-start lg:justify-between items-center lg:items-end w-full relative">
+      <footer className="relative bg-transparent container mx-auto text-black pb-0 lg:pb-12 flex justify-end">
+        <div className="flex flex-col lg:flex-row justify-start lg:justify-between items-center lg:items-end w-full relative pb-44 lg:pb-0">
+          {/* Menu Mobile */}
+          <div className="bg-primary text-white flex justify-center items-center py-12 w-full absolute bottom-0 left-0 lg:hidden">
+            <ul className="flex items-center gap-8 uppercase font-brandon font-bold">
+              <li className="hover:underline cursor-pointer">Servicios</li>
+              <li className="hover:underline cursor-pointer mr-0 lg:mr-4">
+                Política
+              </li>
+              <li className="hover:underline cursor-pointer mr-0 lg:mr-4">
+                Contacto
+              </li>
+            </ul>
+          </div>
+
           {/* Línea vertical y enlaces */}
-          <div className="flex flex-col lg:flex-row items-start lg:items-end uppercase">
+          <div className="hidden lg:flex flex-col lg:flex-row items-start lg:items-end uppercase px-5 lg:px-28 2xl:px-8">
             <div className="hidden lg:block border-l border-black h-48 mr-4" />
             <ul className="flex flex-col lg:flex-row items-center gap-4">
               <li className="hover:underline cursor-pointer">Servicios</li>
@@ -95,7 +156,7 @@ const Footer = forwardRef((props, ref) => {
           </div>
 
           {/* Derechos y logo */}
-          <div className="text-right text-xs flex flex-col-reverse lg:flex-row items-center gap-4">
+          <div className="text-right text-xs flex flex-col-reverse lg:flex-row items-center gap-4 px-5 lg:px-28 2xl:px-8">
             <div>
               <p>© {new Date().getFullYear()} Derechos reservados</p>
               <p>

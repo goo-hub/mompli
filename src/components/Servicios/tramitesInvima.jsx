@@ -13,23 +13,44 @@ Modal.setAppElement("#root");
 const tabsData = {
   "Ministerio de Justicia": [
     {
-      title: "Manejo de productos con sustancias químicas controladas en el SICOP",
+      title:
+        "Manejo de productos con sustancias químicas controladas en el SICOP",
       image: ministerio1,
-      description: "Brindamos asesoría técnica para registrar alimentos bajo normatividad vigente.",
+      description:
+        "Brindamos asesoría técnica para registrar alimentos bajo normatividad vigente.",
       phases: [
-        { title: "FASE 1: DIAGNÓSTICO", points: ["Evaluar requisitos", "Revisión documental"] },
-        { title: "FASE 2: DISEÑO", points: ["Plan de acción", "Estrategia regulatoria"] },
-        { title: "FASE 3: IMPLEMENTACIÓN", points: ["Soporte técnico", "Radicación ante INVIMA"] },
+        {
+          title: "FASE 1: DIAGNÓSTICO",
+          points: ["Evaluar requisitos", "Revisión documental"],
+        },
+        {
+          title: "FASE 2: DISEÑO",
+          points: ["Plan de acción", "Estrategia regulatoria"],
+        },
+        {
+          title: "FASE 3: IMPLEMENTACIÓN",
+          points: ["Soporte técnico", "Radicación ante INVIMA"],
+        },
       ],
     },
     {
       title: "Trámites de licencia de cultivo de cannabis industrial",
       image: ministerio2,
-      description: "Brindamos asesoría técnica para registrar alimentos bajo normatividad vigente.",
+      description:
+        "Brindamos asesoría técnica para registrar alimentos bajo normatividad vigente.",
       phases: [
-        { title: "FASE 1: DIAGNÓSTICO", points: ["Evaluar requisitos", "Revisión documental"] },
-        { title: "FASE 2: DISEÑO", points: ["Plan de acción", "Estrategia regulatoria"] },
-        { title: "FASE 3: IMPLEMENTACIÓN", points: ["Soporte técnico", "Radicación ante INVIMA"] },
+        {
+          title: "FASE 1: DIAGNÓSTICO",
+          points: ["Evaluar requisitos", "Revisión documental"],
+        },
+        {
+          title: "FASE 2: DISEÑO",
+          points: ["Plan de acción", "Estrategia regulatoria"],
+        },
+        {
+          title: "FASE 3: IMPLEMENTACIÓN",
+          points: ["Soporte técnico", "Radicación ante INVIMA"],
+        },
       ],
     },
   ],
@@ -37,45 +58,87 @@ const tabsData = {
     {
       title: "Autorización para el manejo de productos controlados en Colombia",
       image: fondo1,
-      description: "Brindamos asesoría técnica para registrar alimentos bajo normatividad vigente.",
+      description:
+        "Brindamos asesoría técnica para registrar alimentos bajo normatividad vigente.",
       phases: [
-        { title: "FASE 1: DIAGNÓSTICO", points: ["Evaluar requisitos", "Revisión documental"] },
-        { title: "FASE 2: DISEÑO", points: ["Plan de acción", "Estrategia regulatoria"] },
-        { title: "FASE 3: IMPLEMENTACIÓN", points: ["Soporte técnico", "Radicación ante INVIMA"] },
+        {
+          title: "FASE 1: DIAGNÓSTICO",
+          points: ["Evaluar requisitos", "Revisión documental"],
+        },
+        {
+          title: "FASE 2: DISEÑO",
+          points: ["Plan de acción", "Estrategia regulatoria"],
+        },
+        {
+          title: "FASE 3: IMPLEMENTACIÓN",
+          points: ["Soporte técnico", "Radicación ante INVIMA"],
+        },
       ],
     },
     {
       title: "Asesoría en reportes periódicos ante el fondo nacional",
       image: fondo2,
-      description: "Brindamos asesoría técnica para registrar alimentos bajo normatividad vigente.",
+      description:
+        "Brindamos asesoría técnica para registrar alimentos bajo normatividad vigente.",
       phases: [
-        { title: "FASE 1: DIAGNÓSTICO", points: ["Evaluar requisitos", "Revisión documental"] },
-        { title: "FASE 2: DISEÑO", points: ["Plan de acción", "Estrategia regulatoria"] },
-        { title: "FASE 3: IMPLEMENTACIÓN", points: ["Soporte técnico", "Radicación ante INVIMA"] },
+        {
+          title: "FASE 1: DIAGNÓSTICO",
+          points: ["Evaluar requisitos", "Revisión documental"],
+        },
+        {
+          title: "FASE 2: DISEÑO",
+          points: ["Plan de acción", "Estrategia regulatoria"],
+        },
+        {
+          title: "FASE 3: IMPLEMENTACIÓN",
+          points: ["Soporte técnico", "Radicación ante INVIMA"],
+        },
       ],
     },
   ],
   "Entidades territoriales de salud": [
     {
-      title: "Apertura de establecimientos farmacéuticos mayoristas y minoristas",
+      title:
+        "Apertura de establecimientos farmacéuticos mayoristas y minoristas",
       image: aseo1,
-      description: "Brindamos asesoría técnica para registrar alimentos bajo normatividad vigente.",
+      description:
+        "Brindamos asesoría técnica para registrar alimentos bajo normatividad vigente.",
       phases: [
-        { title: "FASE 1: DIAGNÓSTICO", points: ["Evaluar requisitos", "Revisión documental"] },
-        { title: "FASE 2: DISEÑO", points: ["Plan de acción", "Estrategia regulatoria"] },
-        { title: "FASE 3: IMPLEMENTACIÓN", points: ["Soporte técnico", "Radicación ante INVIMA"] },
+        {
+          title: "FASE 1: DIAGNÓSTICO",
+          points: ["Evaluar requisitos", "Revisión documental"],
+        },
+        {
+          title: "FASE 2: DISEÑO",
+          points: ["Plan de acción", "Estrategia regulatoria"],
+        },
+        {
+          title: "FASE 3: IMPLEMENTACIÓN",
+          points: ["Soporte técnico", "Radicación ante INVIMA"],
+        },
       ],
     },
   ],
   "Industria y comercio": [
     {
-      title: "Manejo de productos con sustancias químicas controladas en el SICOP",
+      title:
+        "Manejo de productos con sustancias químicas controladas en el SICOP",
       image: aseo2,
-      description: "Brindamos asesoría técnica para registrar alimentos bajo normatividad vigente.",
+      description:
+        "Brindamos asesoría técnica para registrar alimentos bajo normatividad vigente.",
       phases: [
-        { title: "FASE 1: DIAGNÓSTICO", points: ["Evaluar requisitos", "Revisión documental"] },
-        { title: "FASE 2: DISEÑO", points: ["Plan de acción", "Estrategia regulatoria"] },
-        { title: "FASE 3: IMPLEMENTACIÓN", points: ["Soporte técnico", "Radicación ante INVIMA"] },
+        {
+          title: "FASE 1: DIAGNÓSTICO",
+          points: ["Evaluar requisitos", "Revisión documental"],
+        },
+        {
+          title: "FASE 2: DISEÑO",
+          points: ["Plan de acción", "Estrategia regulatoria"],
+        },
+        {
+          title: "FASE 3: IMPLEMENTACIÓN",
+          points: ["Soporte técnico", "Radicación ante INVIMA"],
+        },
       ],
     },
   ],
@@ -115,7 +178,11 @@ const MobileCarousel = ({ items, onCardClick }) => {
     <div
       ref={trackRef}
       className="flex gap-3 overflow-x-auto pb-3 cursor-grab select-none"
-      style={{ scrollSnapType: "x mandatory", WebkitOverflowScrolling: "touch", scrollbarWidth: "none" }}
+      style={{
+        scrollSnapType: "x mandatory",
+        WebkitOverflowScrolling: "touch",
+        scrollbarWidth: "none",
+      }}
       onPointerDown={onPointerDown}
       onPointerMove={onPointerMove}
       onPointerUp={onPointerUp}
@@ -124,12 +191,21 @@ const MobileCarousel = ({ items, onCardClick }) => {
       {items.map((item, idx) => (
         <div
           key={idx}
-          onClick={() => { if (!hasDragged.current) onCardClick(item); }}
+          onClick={() => {
+            if (!hasDragged.current) onCardClick(item);
+          }}
           className="group flex-shrink-0 w-[72vw] max-w-[260px] border cursor-pointer p-2 sm:p-3 rounded-lg bg-white"
           style={{ scrollSnapAlign: "start" }}
         >
-          <img src={item.image} alt={item.title} className="w-full object-cover  grayscale group-hover:grayscale-0 transition duration-300" draggable={false} />
-          <h4 className="font-bold font-Inter text-sm py-2 line-clamp-5 sm:line-clamp-3">{item.title}</h4>
+          <img
+            src={item.image}
+            alt={item.title}
+            className="w-full object-cover grayscale hover:grayscale-0 transition duration-300"
+            draggable={false}
+          />
+          <h4 className="font-medium font-geraldton p-2 line-clamp-3">
+            {item.title}
+          </h4>
         </div>
       ))}
     </div>
@@ -153,10 +229,19 @@ const TramitesInvima = () => {
   }, []);
 
   return (
-    <div className="pt-8 lg:pt-16">
-      <h2 className="text-xl lg:text-3xl text-center underline font-bold uppercase mb-8 lg:mb-16">
-        Trámites ante otras entidades regulatorias
-      </h2>
+    <div className="group pt-8 lg:pt-16">
+      <div className="w-full border-t border-primary">
+        <div className="flex justify-between pt-6 relative">
+          <div className="w-[1px] h-16 -rotate-45 absolute -top-2 left-6 bg-primary block lg:hidden">
+            &nbsp;
+          </div>
+        </div>
+      </div>
+      <div className="lg:w-full flex justify-end mt-8">
+        <h2 className="w-3/4 lg:w-full tracking-wider text-2xl normal-case lg:uppercase font-geraldton font-light lg:font-medium text-right lg:text-center mb-8 lg:mb-4 before:inline-block before:transition-all duration-500 before:w-5 before:h-5 before:mr-4 before:border before:border-primary before:group-hover:bg-accent before:rounded-full ">
+          Trámites ante otras entidades regulatorias
+        </h2>
+      </div>
 
       {/* ── TABS desktop ── */}
       <div className="hidden lg:flex flex-row justify-center gap-4 xl:gap-10 border-b border-gray-300 mb-8">
@@ -164,7 +249,7 @@ const TramitesInvima = () => {
           <button
             key={tab}
             onClick={() => setActiveTab(tab)}
-            className={`py-2 px-4 border-b-2 font-Inter transition ${
+            className={`py-2 px-4 border-b-2  transition ${
               activeTab === tab
                 ? "border-primary text-light bg-primary font-semibold rounded-t-sm"
                 : "border-transparent text-gray-500 hover:text-black"
@@ -179,7 +264,8 @@ const TramitesInvima = () => {
       <div className="flex flex-col gap-8 lg:hidden">
         {Object.keys(tabsData).map((tab) => (
           <div key={tab}>
-            <h3 className="font-bold font-Inter text-lg mb-3">{tab}</h3>
+            <h3 className="font-bold text-2xl mb-1">{tab}</h3>
+            <hr className="w-full border-t border-primary mb-4" />
             <MobileCarousel items={tabsData[tab]} onCardClick={openModal} />
           </div>
         ))}
@@ -198,11 +284,11 @@ const TramitesInvima = () => {
               idx < 2 ? "border-r border-primary" : ""
             }`}
           >
-            <h4 className="font-bold font-Inter text-xl group-hover:underline">{item.title}</h4>
+            <h4 className="font-medium font-geraldton text-lg">{item.title}</h4>
             <img
               src={item.image}
               alt={item.title}
-              className="w-3/4 mt-12 grayscale group-hover:grayscale-0 transition duration-300"
+              className="w-3/4 mt-4 grayscale hover:grayscale-0 transition duration-300"
             />
           </div>
         ))}
@@ -218,7 +304,9 @@ const TramitesInvima = () => {
       >
         {selectedService && (
           <div>
-            <h2 className="text-xl md:text-2xl font-bold mb-4">{selectedService.title}</h2>
+            <h2 className="text-xl md:text-2xl font-bold mb-4">
+              {selectedService.title}
+            </h2>
             <p className="mb-4 text-gray-600">{selectedService.description}</p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {selectedService.phases.map((phase, i) => (

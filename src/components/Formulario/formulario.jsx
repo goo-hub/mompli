@@ -60,7 +60,7 @@ const Formulario = () => {
   return (
     <form
       onSubmit={handleSubmit}
-      className="w-full mx-auto py-6 space-y-4 font-Inter"
+      className="w-full mx-auto py-6 space-y-4 "
     >
       <div>
         <input
