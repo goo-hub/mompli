@@ -63,7 +63,7 @@ const Footer = forwardRef((props, ref) => {
                       <FontAwesomeIcon icon={faFacebookF} className="" />
                     </a> */}
                     <a
-                      href="https://instagram.com/mompli__"
+                      href="https://instagram.com/mompli.co"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
