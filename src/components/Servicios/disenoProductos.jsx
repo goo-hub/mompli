@@ -12,6 +12,8 @@ import suplementos3 from "../../img/invima/autorizacion-publicidad.png";
 import aseo1 from "../../img/invima/cert-productos-aseo.png";
 import aseo2 from "../../img/invima/notificacion-sanitaria-obligatoria.png";
 
+import { scrollToContact } from "../../utils/scrollToContact";
+
 Modal.setAppElement("#root");
 
 const tabsData = {
@@ -313,7 +315,7 @@ const MobileCarousel = ({ items, onCardClick }) => {
           onClick={() => {
             if (!hasDragged.current) onCardClick(item);
           }}
-          className="group flex-shrink-0 w-[72vw] max-w-[200px] border cursor-pointer p-2 sm:p-3 rounded-lg bg-white"
+          className="group flex-shrink-0 w-[40vw] max-w-[200px] border cursor-pointer p-2 sm:p-3 rounded-lg bg-white"
           style={{ scrollSnapAlign: "start" }}
         >
           <img
@@ -332,7 +334,7 @@ const MobileCarousel = ({ items, onCardClick }) => {
 };
 
 // ─── Componente principal ──────────────────────────────────────────────────────
-const DisenoProductos = () => {
+const DisenoProductos = ({ onCtaClick = () => {} }) => {
   const [activeTab, setActiveTab] = useState("Alimentos");
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedService, setSelectedService] = useState(null);
@@ -412,7 +414,7 @@ const DisenoProductos = () => {
         onRequestClose={closeModal}
         contentLabel="Detalles del servicio"
         overlayClassName="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50"
-        className="bg-light max-w-4xl w-full mx-4 p-8 relative shadow-lg border-b-[24px] border-accent"
+        className="bg-light max-h-[95vh] overflow-y-scroll max-w-4xl w-full mx-4 p-8 relative shadow-lg border-b-[24px] border-accent"
       >
         {selectedService && (
           <div>
@@ -437,6 +439,15 @@ const DisenoProductos = () => {
               className="absolute top-4 right-4 text-gray-700 hover:text-black font-bold"
             >
               &#10005;
+            </button>
+            <button
+                onClick={() => {
+                  closeModal();
+                  onCtaClick();
+                }}
+              className="mt-8 px-2 py-1 border-2 border-primary font-geraldton"
+            >
+              Saber Más
             </button>
           </div>
         )}

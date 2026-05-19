@@ -127,7 +127,7 @@ const MobileCarousel = ({ items, onCardClick }) => {
           onClick={() => {
             if (!hasDragged.current) onCardClick(item);
           }}
-          className="group flex-shrink-0 w-[72vw] max-w-[260px] border cursor-pointer p-2 sm:p-3 rounded-lg bg-white"
+          className="group flex-shrink-0 w-[40vw] max-w-[260px] border cursor-pointer p-2 sm:p-3 rounded-lg bg-white"
           style={{ scrollSnapAlign: "start" }}
         >
           <img
@@ -146,7 +146,7 @@ const MobileCarousel = ({ items, onCardClick }) => {
 };
 
 // ─── Componente principal ──────────────────────────────────────────────────────
-const Servicios = forwardRef(({ refs }, ref) => {
+const Servicios = forwardRef(({ refs, onCtaClick }, ref) => {
   const [activeTab, setActiveTab] = useState("Ministerio de Justicia");
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedService, setSelectedService] = useState(null);
@@ -177,8 +177,8 @@ const Servicios = forwardRef(({ refs }, ref) => {
         </div>
       </div>
 
-      <DisenoProductos />
-      <TramitesInvima />
+      <DisenoProductos onCtaClick={onCtaClick} />
+      <TramitesInvima onCtaClick={onCtaClick} />
 
       <div className="group pt-8 lg:pt-16">
         <div className="w-full border-t border-primary">
@@ -253,7 +253,7 @@ const Servicios = forwardRef(({ refs }, ref) => {
           onRequestClose={closeModal}
           contentLabel="Detalles del servicio"
           overlayClassName="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50"
-          className="bg-light max-w-4xl w-full mx-4 p-8 relative shadow-lg border-b-[24px] border-accent"
+          className="bg-light max-h-[95vh] overflow-y-scroll max-w-4xl w-full mx-4 p-8 relative shadow-lg border-b-[24px] border-accent"
         >
           {selectedService && (
             <div>
@@ -280,6 +280,15 @@ const Servicios = forwardRef(({ refs }, ref) => {
                 className="absolute top-4 right-4 text-gray-700 hover:text-black font-bold"
               >
                 &#10005;
+              </button>
+              <button
+                onClick={() => {
+                  closeModal();
+                  onCtaClick();
+                }}
+                className="mt-8 px-2 py-1 border-2 border-primary font-geraldton"
+              >
+                Saber Más
               </button>
             </div>
           )}

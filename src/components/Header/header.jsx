@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFacebookF, faInstagram } from "@fortawesome/free-brands-svg-icons";
+import { faWhatsapp, faInstagram } from "@fortawesome/free-brands-svg-icons";
 import BurguerButton from "./BurguerButton/burguerButton";
 
 import logo from "../../img/logo.png";
@@ -26,7 +26,7 @@ const Header = () => {
   }, []);
 
   return (
-    <div className="w-full lg:w-24 h-auto lg:h-[95%] my-0 lg:my-auto bg-light lg:bg-transparent fixed top-0 lg:top-5 flex justify-center items-center left-0 p-5 border-solid border-r-0 lg:border-r-2 border-primary z-50">
+    <div className="w-full lg:w-24 h-auto lg:h-[95%] my-0 lg:my-auto bg-light lg:bg-transparent fixed top-0 lg:top-5 flex justify-center items-center left-0 p-5 border-solid border-r-0 lg:border-r-2 border-primary z-[9999]">
       <BurguerButton action={handleToggleMenu} showMenu={showMenu} />
 
       <div
@@ -54,16 +54,16 @@ const Header = () => {
           <ul className="w-full flex justify-center gap-3">
             <li>
               <a
-                href="https://facebook.com/"
+                href="https://wa.link/amgbfn"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <FontAwesomeIcon icon={faFacebookF} />
+                <FontAwesomeIcon icon={faWhatsapp} />
               </a>
             </li>
             <li>
               <a
-                href="https://instagram.com/"
+                href="https://instagram.com/mompli.co"
                 target="_blank"
                 rel="noopener noreferrer"
               >

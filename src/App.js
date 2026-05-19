@@ -22,7 +22,7 @@ function App() {
       <Header />
       <Hero onCtaClick={scrollToFooter} />
       <Nosotros />
-      <Servicios refs={{ invimaRef, cannabisRef, otrasRef }} />
+      <Servicios onCtaClick={scrollToFooter} refs={{ invimaRef, cannabisRef, otrasRef }} />
       <Flotante sections={{ invimaRef, cannabisRef, otrasRef }} />
       <Footer ref={footerRef} />
     </div>

@@ -32,11 +32,11 @@ const Footer = forwardRef((props, ref) => {
                 <li className="mt-2">
                   <FontAwesomeIcon icon={faWhatsapp} className="mr-3 " />
                   <a
-                    href="https://mompli.co"
+                    href="https://wa.link/amgbfn"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    324 540 4397
+                    302 102 0571
                   </a>
                 </li>
                 <li className="mt-2">
@@ -55,13 +55,13 @@ const Footer = forwardRef((props, ref) => {
                 </li>
                 <li>
                   <div className="flex gap-4 mt-2">
-                    <a
+                    {/* <a
                       href="https://facebook.com"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
                       <FontAwesomeIcon icon={faFacebookF} className="" />
-                    </a>
+                    </a> */}
                     <a
                       href="https://instagram.com/mompli__"
                       target="_blank"
@@ -79,11 +79,11 @@ const Footer = forwardRef((props, ref) => {
               <li>
                 <FontAwesomeIcon icon={faWhatsapp} className="mr-3 " />
                 <a
-                  href="https://mompli.co"
+                  href="https://wa.link/amgbfn"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  324 540 4397
+                  302 102 0571
                 </a>
               </li>
               <li>
@@ -102,15 +102,15 @@ const Footer = forwardRef((props, ref) => {
               </li>
               <li>
                 <div className="flex gap-4 absolute top-5 right-5">
-                  <a
+                  {/* <a
                     href="https://facebook.com"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
                     <FontAwesomeIcon icon={faFacebookF} className="" />
-                  </a>
+                  </a> */}
                   <a
-                    href="https://instagram.com/mompli__"
+                    href="https://instagram.com/mompli.co"
                     target="_blank"
                     rel="noopener noreferrer"
                   >

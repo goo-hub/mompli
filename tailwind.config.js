@@ -14,7 +14,10 @@ module.exports = {
       fontFamily: {
         geraldton: ['Geraldton', 'sans-serif'],
         brandon: ['BrandonGrotesque', 'sans-serif'],
-      }
+      },
+      screens: {
+        'xl2': { min: '1500px', max: '1900px' },
+      },
     },
   },
   plugins: [],
